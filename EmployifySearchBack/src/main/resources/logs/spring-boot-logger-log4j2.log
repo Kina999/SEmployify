@@ -1,0 +1,1280 @@
+2022-06-19 12:57:51,672 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 11.0.14 on DESKTOP-AQBAB7L with PID 13304 (D:\Master\UDD\UDDProjekat\udd\target\classes started by TeDo in D:\Master\UDD\UDDProjekat\udd)
+2022-06-19 12:57:51,698 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-19 12:57:52,726 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-19 12:57:52,727 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-19 12:57:52,794 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 57 ms. Found 1 Elasticsearch repository interfaces.
+2022-06-19 12:57:53,149 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-19 12:57:53,151 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-19 12:57:53,178 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 26 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-19 12:57:53,195 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-19 12:57:53,199 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 12:57:53,223 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.employify.repository.CVRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-06-19 12:57:53,223 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2022-06-19 12:57:54,765 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8089 (http)
+2022-06-19 12:57:54,798 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8089"]
+2022-06-19 12:57:54,799 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-19 12:57:54,802 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-06-19 12:57:55,143 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-19 12:57:55,144 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3327 ms
+2022-06-19 12:57:55,581 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 12:57:55,720 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-06-19 12:57:56,039 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-19 12:57:56,281 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-19 12:57:56,657 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-19 12:57:56,688 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-06-19 12:57:57,245 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 12:57:57,263 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:57:58,736 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 12:57:59,309 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8089"]
+2022-06-19 12:57:59,328 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8089 (http) with context path ''
+2022-06-19 12:57:59,341 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 8.57 seconds (JVM running for 10.314)
+2022-06-19 12:58:12,252 INFO o.a.j.l.DirectJDKLog [http-nio-8089-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 12:58:12,253 INFO o.s.w.s.FrameworkServlet [http-nio-8089-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-06-19 12:58:12,255 INFO o.s.w.s.FrameworkServlet [http-nio-8089-exec-1] Completed initialization in 2 ms
+2022-06-19 12:59:35,417 INFO c.u.c.IndexerController [http-nio-8089-exec-2] PLACE=Belgrade
+2022-06-19 13:11:35,417 INFO c.u.c.IndexerController [http-nio-8089-exec-2] PLACE=Novi_Sad
+2022-06-19 13:14:17,946 INFO c.u.c.IndexerController [http-nio-8089-exec-5] PLACE=Havana
+2023-02-13 14:06:49,277 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 4396 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 14:06:49,302 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 14:06:50,458 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-02-13 14:06:50,459 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:06:50,545 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 75 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 14:06:50,863 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-02-13 14:06:50,864 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:06:50,891 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 25 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 14:06:50,907 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-02-13 14:06:50,909 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-13 14:06:50,937 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.employify.repository.CVRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2023-02-13 14:06:50,938 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2023-02-13 14:06:52,024 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8089 (http)
+2023-02-13 14:06:52,046 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8089"]
+2023-02-13 14:06:52,048 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 14:06:52,051 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 14:06:52,304 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 14:06:52,304 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2894 ms
+2023-02-13 14:06:52,453 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-02-13 14:06:52,459 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2023-02-13 14:06:52,488 INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-13 14:06:52,530 ERROR o.s.b.d.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-02-13 14:10:34,327 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 11060 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 14:10:34,353 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 14:10:35,324 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:10:35,408 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 73 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 14:10:35,730 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:10:35,748 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 16 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 14:10:36,645 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8089 (http)
+2023-02-13 14:10:36,690 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8089"]
+2023-02-13 14:10:36,693 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 14:10:36,694 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 14:10:36,929 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 14:10:36,929 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2452 ms
+2023-02-13 14:10:39,641 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8089"]
+2023-02-13 14:10:39,679 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8089 (http) with context path ''
+2023-02-13 14:10:39,696 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.52 seconds (JVM running for 8.739)
+2023-02-13 14:17:47,782 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 10988 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 14:17:47,808 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 14:17:48,235 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.employify.EmployifySearchApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'indexer' for bean class [com.employify.indexingold.IndexerOld] conflicts with existing, non-compatible bean definition of same name and class [com.employify.indexer.Indexer]
+2023-02-13 14:17:48,304 ERROR o.s.b.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.employify.EmployifySearchApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'indexer' for bean class [com.employify.indexingold.IndexerOld] conflicts with existing, non-compatible bean definition of same name and class [com.employify.indexer.Indexer]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
+	at com.employify.EmployifySearchApplication.main(UddApplication.java:12) [classes/:?]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'indexer' for bean class [com.employify.indexingold.IndexerOld] conflicts with existing, non-compatible bean definition of same name and class [com.employify.indexer.Indexer]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175) ~[spring-context-5.3.15.jar:5.3.15]
+	... 13 more
+2023-02-13 14:18:50,852 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 388 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 14:18:50,879 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 14:18:51,937 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:18:52,030 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 83 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 14:18:52,340 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:18:52,363 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 22 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 14:18:53,201 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 14:18:53,235 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 14:18:53,237 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 14:18:53,238 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 14:18:53,478 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 14:18:53,479 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2482 ms
+2023-02-13 14:18:53,593 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexerController' defined in file [C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes\com\udd\controller\IndexerController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexer' defined in file [C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes\com\udd\indexer\Indexer.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.employify.repository.DocumentRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-02-13 14:18:53,600 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2023-02-13 14:18:53,620 INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-13 14:18:53,659 ERROR o.s.b.d.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.employify.indexer.Indexer required a bean of type 'com.employify.repository.DocumentRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.employify.repository.DocumentRepository' in your configuration.
+
+2023-02-13 14:19:21,710 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 4672 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 14:19:21,737 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 14:19:22,792 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:19:22,886 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 83 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 14:19:23,189 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:19:23,226 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 36 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 14:19:24,051 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 14:19:24,084 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 14:19:24,086 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 14:19:24,088 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 14:19:24,326 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 14:19:24,327 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2485 ms
+2023-02-13 14:19:25,796 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexerController' defined in file [C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes\com\udd\controller\IndexerController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'indexer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'dataDir' in value "${dataDir}"
+2023-02-13 14:19:25,803 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2023-02-13 14:19:25,822 INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-13 14:19:25,858 ERROR o.s.b.SpringApplication [main] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexerController' defined in file [C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes\com\udd\controller\IndexerController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'indexer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'dataDir' in value "${dataDir}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
+	at com.employify.EmployifySearchApplication.main(UddApplication.java:12) [classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'indexer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'dataDir' in value "${dataDir}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 19 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'dataDir' in value "${dataDir}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 19 more
+2023-02-13 14:19:54,399 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 7392 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 14:19:54,437 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 14:19:57,194 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:19:57,306 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 98 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 14:19:57,772 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:19:57,801 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 28 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 14:19:59,256 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 14:19:59,291 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 14:19:59,292 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 14:19:59,293 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 14:19:59,956 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 14:19:59,957 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5361 ms
+2023-02-13 14:20:04,272 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexerControllerOld': Unsatisfied dependency expressed through field 'indexer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexerOld': Unsatisfied dependency expressed through field 'repository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.employify.repositoryold.CVRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-02-13 14:20:04,280 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2023-02-13 14:20:04,303 INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-13 14:20:04,373 ERROR o.s.b.d.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field repository in com.employify.indexingold.IndexerOld required a bean of type 'com.employify.repositoryold.CVRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.employify.repositoryold.CVRepository' in your configuration.
+
+2023-02-13 14:21:18,873 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 8536 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 14:21:18,903 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 14:21:20,089 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:21:20,207 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 104 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 14:21:20,581 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:21:20,612 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 14:21:21,587 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 14:21:21,631 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 14:21:21,634 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 14:21:21,636 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 14:21:21,904 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 14:21:21,905 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2865 ms
+2023-02-13 14:21:24,037 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 14:21:24,074 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 14:21:24,087 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.537 seconds (JVM running for 8.89)
+2023-02-13 14:22:02,801 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 14:22:02,801 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-13 14:22:02,816 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 15 ms
+2023-02-13 14:22:03,857 WARN o.a.p.p.f.FileSystemFontProvider [http-nio-9099-exec-1] New fonts found, font cache will be re-built
+2023-02-13 14:22:03,857 WARN o.a.p.p.f.FileSystemFontProvider [http-nio-9099-exec-1] Building on-disk font cache, this may take a while
+2023-02-13 14:22:04,029 WARN o.a.p.p.f.FileSystemFontProvider [http-nio-9099-exec-1] Finished building on-disk font cache, found 354 fonts
+2023-02-13 14:26:00,287 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 14772 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 14:26:00,316 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 14:26:01,387 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:26:01,496 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 96 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 14:26:01,826 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 14:26:01,847 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 20 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 14:26:02,895 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 14:26:02,936 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 14:26:02,939 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 14:26:02,941 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 14:26:03,198 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 14:26:03,199 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2767 ms
+2023-02-13 14:26:05,696 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 14:26:05,719 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 14:26:05,736 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.783 seconds (JVM running for 9.484)
+2023-02-13 14:26:37,816 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 14:26:37,817 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 14:26:37,820 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-13 17:42:28,201 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 11300 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 17:42:28,232 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 17:42:29,293 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 17:42:29,402 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 96 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 17:42:29,733 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 17:42:29,754 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 20 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 17:42:30,790 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 17:42:30,833 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 17:42:30,836 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 17:42:30,837 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 17:42:31,130 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 17:42:31,131 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2777 ms
+2023-02-13 17:42:33,662 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 17:42:33,687 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 17:42:33,702 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.799 seconds (JVM running for 9.348)
+2023-02-13 17:42:48,443 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 17:42:48,444 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 17:42:48,445 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 17:54:41,998 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 10096 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 17:54:42,029 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 17:54:43,238 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 17:54:43,363 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 111 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 17:54:43,767 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 17:54:43,795 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 26 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 17:54:44,962 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 17:54:45,005 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 17:54:45,005 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 17:54:45,005 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 17:54:45,276 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 17:54:45,276 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3120 ms
+2023-02-13 17:54:47,868 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 17:54:47,887 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 17:54:47,903 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 7.434 seconds (JVM running for 10.744)
+2023-02-13 17:56:12,279 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 17:56:12,279 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 17:56:12,279 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 0 ms
+2023-02-13 18:03:54,724 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 11632 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 18:03:54,751 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 18:03:55,808 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:03:55,916 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 95 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 18:03:56,258 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:03:56,292 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 33 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 18:03:57,535 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 18:03:57,588 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:03:57,591 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 18:03:57,593 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 18:03:57,856 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 18:03:57,857 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2989 ms
+2023-02-13 18:04:00,481 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:04:00,504 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 18:04:00,519 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 7.106 seconds (JVM running for 9.64)
+2023-02-13 18:04:05,658 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 18:04:05,658 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 18:04:05,660 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 18:06:13,179 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 13992 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 18:06:13,213 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 18:06:14,209 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:06:14,293 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 72 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 18:06:14,596 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:06:14,630 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 32 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 18:06:15,442 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 18:06:15,480 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:06:15,482 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 18:06:15,483 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 18:06:15,728 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 18:06:15,729 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2409 ms
+2023-02-13 18:06:17,795 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:06:17,814 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 18:06:17,830 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 5.829 seconds (JVM running for 7.978)
+2023-02-13 18:06:38,532 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 18:06:38,532 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 18:06:38,533 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 18:09:41,715 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 17460 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 18:09:41,738 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 18:09:42,716 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:09:42,798 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 72 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 18:09:43,113 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:09:43,147 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 33 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 18:09:43,961 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 18:09:43,996 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:09:43,998 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 18:09:43,999 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 18:09:44,235 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 18:09:44,236 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2386 ms
+2023-02-13 18:09:46,319 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:09:46,345 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 18:09:46,363 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 5.79 seconds (JVM running for 8.014)
+2023-02-13 18:10:09,847 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 18:10:09,847 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 18:10:09,848 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 18:19:06,526 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 1892 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 18:19:06,557 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 18:19:07,556 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:19:07,650 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 90 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 18:19:07,962 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:19:07,993 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 33 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 18:19:08,790 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 18:19:08,822 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:19:08,822 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 18:19:08,822 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 18:19:09,043 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 18:19:09,043 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2387 ms
+2023-02-13 18:19:10,983 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:19:10,998 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 18:19:11,014 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 5.641 seconds (JVM running for 7.76)
+2023-02-13 18:19:45,156 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 18:19:45,157 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 18:19:45,159 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-13 18:27:38,606 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 18428 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 18:27:38,636 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 18:27:39,785 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:27:39,902 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 103 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 18:27:40,250 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:27:40,271 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 20 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 18:27:41,251 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 18:27:41,293 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:27:41,295 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 18:27:41,296 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 18:27:41,548 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 18:27:41,549 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2793 ms
+2023-02-13 18:27:44,085 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:27:44,107 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 18:27:44,124 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.827 seconds (JVM running for 9.945)
+2023-02-13 18:27:51,290 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 18:27:51,290 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 18:27:51,292 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-13 18:34:56,554 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 1780 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 18:34:56,580 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 18:34:57,668 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:34:57,775 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 95 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 18:34:58,143 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:34:58,164 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 20 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 18:34:59,146 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 18:34:59,200 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:34:59,202 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 18:34:59,204 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 18:34:59,446 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 18:34:59,447 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2748 ms
+2023-02-13 18:35:02,040 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:35:02,064 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 18:35:02,080 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.87 seconds (JVM running for 9.549)
+2023-02-13 18:35:52,556 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 18:35:52,557 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 18:35:52,562 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 4 ms
+2023-02-13 18:54:03,161 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 18156 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 18:54:03,189 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 18:54:04,349 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:54:04,465 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 103 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 18:54:04,869 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 18:54:04,897 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 26 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 18:54:05,957 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 18:54:06,000 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:54:06,002 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 18:54:06,004 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 18:54:06,268 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 18:54:06,269 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2955 ms
+2023-02-13 18:54:08,834 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 18:54:08,863 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 18:54:08,885 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 7.104 seconds (JVM running for 10.087)
+2023-02-13 18:54:34,634 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 18:54:34,635 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 18:54:34,636 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 19:04:00,133 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 14976 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 19:04:00,163 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 19:04:01,307 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:04:01,424 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 103 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 19:04:01,780 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:04:01,809 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 27 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 19:04:02,844 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 19:04:02,887 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:04:02,890 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 19:04:02,892 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 19:04:03,145 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 19:04:03,146 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2853 ms
+2023-02-13 19:04:05,634 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:04:05,657 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 19:04:05,674 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.921 seconds (JVM running for 9.775)
+2023-02-13 19:04:58,264 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 19:04:58,265 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 19:04:58,266 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 19:11:36,459 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 12776 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 19:11:36,485 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 19:11:37,538 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:11:37,644 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 93 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 19:11:38,003 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:11:38,023 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 19 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 19:11:39,007 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 19:11:39,050 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:11:39,052 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 19:11:39,054 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 19:11:39,301 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 19:11:39,302 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2694 ms
+2023-02-13 19:11:41,943 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:11:41,966 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 19:11:41,982 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.842 seconds (JVM running for 9.598)
+2023-02-13 19:11:51,370 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 19:11:51,370 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 19:11:51,373 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 19:19:21,512 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 17088 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 19:19:21,541 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 19:19:22,580 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:19:22,689 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 96 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 19:19:23,020 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:19:23,041 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 20 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 19:19:24,104 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 19:19:24,148 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:19:24,149 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 19:19:24,151 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 19:19:24,405 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 19:19:24,406 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2747 ms
+2023-02-13 19:19:26,913 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:19:26,936 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 19:19:26,952 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.738 seconds (JVM running for 9.244)
+2023-02-13 19:19:55,401 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 19:19:55,401 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 19:19:55,403 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-13 19:20:40,842 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 17404 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 19:20:40,876 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 19:20:41,994 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:20:42,099 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 93 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 19:20:42,459 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:20:42,479 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 19 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 19:20:43,473 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 19:20:43,518 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:20:43,520 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 19:20:43,522 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 19:20:43,780 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 19:20:43,781 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2772 ms
+2023-02-13 19:20:46,361 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:20:46,384 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 19:20:46,400 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.894 seconds (JVM running for 9.718)
+2023-02-13 19:21:00,036 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 19:21:00,150 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-13 19:21:00,158 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 7 ms
+2023-02-13 19:28:14,826 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 16768 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 19:28:14,846 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 19:28:16,026 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:28:16,143 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 104 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 19:28:16,515 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:28:16,531 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 19 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 19:28:17,529 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 19:28:17,594 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:28:17,596 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 19:28:17,597 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 19:28:17,831 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 19:28:17,831 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2864 ms
+2023-02-13 19:28:20,618 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:28:20,649 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 19:28:20,665 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 7.302 seconds (JVM running for 9.988)
+2023-02-13 19:28:58,852 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 19:28:58,852 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 19:28:58,854 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-13 19:33:59,262 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 5284 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 19:33:59,287 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 19:34:00,300 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:34:00,396 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 83 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 19:34:00,706 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:34:00,728 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 21 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 19:34:01,563 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 19:34:01,598 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:34:01,599 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 19:34:01,601 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 19:34:01,834 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 19:34:01,835 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2434 ms
+2023-02-13 19:34:03,880 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:34:03,899 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 19:34:03,913 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 5.792 seconds (JVM running for 8.146)
+2023-02-13 19:34:18,737 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 19:34:18,738 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 19:34:18,740 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-13 19:35:05,210 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.util.List.get(int)" because the return value of "java.util.Map.get(Object)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "java.util.List.get(int)" because the return value of "java.util.Map.get(Object)" is null
+	at com.employify.search.ResultRetriever.handleSearchHits(ResultRetriever.java:82) ~[classes/:?]
+	at com.employify.search.ResultRetriever.getResults(ResultRetriever.java:45) ~[classes/:?]
+	at com.employify.controller.SearchController.searchStandardQuery(SearchController.java:31) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-13 19:54:08,101 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 8360 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 19:54:08,152 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 19:54:09,451 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:54:09,578 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 114 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 19:54:09,970 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:54:09,982 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 10 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 19:54:11,379 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 19:54:11,423 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:54:11,425 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 19:54:11,427 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 19:54:11,700 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 19:54:11,701 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3354 ms
+2023-02-13 19:54:13,844 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:54:13,865 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 19:54:13,878 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 7.079 seconds (JVM running for 11.408)
+2023-02-13 19:54:28,836 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 19:54:28,836 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 19:54:28,836 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 0 ms
+2023-02-13 19:56:12,874 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 13616 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 19:56:12,902 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 19:56:13,881 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:56:13,966 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 75 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 19:56:14,261 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:56:14,300 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 37 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 19:56:15,124 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 19:56:15,159 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:56:15,161 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 19:56:15,163 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 19:56:15,420 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 19:56:15,421 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2413 ms
+2023-02-13 19:56:17,483 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:56:17,508 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 19:56:17,521 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 5.802 seconds (JVM running for 7.935)
+2023-02-13 19:56:26,704 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 19:56:26,705 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 19:56:26,706 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 19:57:39,609 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 16080 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 19:57:39,644 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 19:57:40,604 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:57:40,690 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 76 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 19:57:41,014 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:57:41,042 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 26 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 19:57:41,875 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 19:57:41,912 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:57:41,913 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 19:57:41,916 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 19:57:42,162 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 19:57:42,162 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2406 ms
+2023-02-13 19:57:44,160 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:57:44,181 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 19:57:44,195 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 5.703 seconds (JVM running for 7.869)
+2023-02-13 19:57:56,033 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 19:57:56,033 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 19:57:56,034 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 19:58:52,581 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 964 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 19:58:52,607 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 19:58:53,771 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:58:53,900 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 114 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 19:58:54,261 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 19:58:54,286 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 25 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 19:58:55,272 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 19:58:55,327 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:58:55,328 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 19:58:55,330 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 19:58:55,591 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 19:58:55,592 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2865 ms
+2023-02-13 19:58:58,255 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 19:58:58,280 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 19:58:58,294 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 7.117 seconds (JVM running for 10.505)
+2023-02-13 19:59:07,707 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 19:59:07,707 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 19:59:07,709 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 20:01:14,450 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 10040 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 20:01:14,475 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 20:01:15,478 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 20:01:15,592 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 101 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 20:01:15,930 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 20:01:15,969 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 37 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 20:01:16,783 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 20:01:16,819 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 20:01:16,820 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 20:01:16,823 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 20:01:17,056 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 20:01:17,056 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2478 ms
+2023-02-13 20:01:19,083 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 20:01:19,102 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 20:01:19,117 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 5.794 seconds (JVM running for 8.264)
+2023-02-13 20:01:38,622 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 20:01:38,622 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 20:01:38,622 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 0 ms
+2023-02-13 20:02:06,485 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1] with root cause
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.employify.search.QueryBuilderCustom.buildQuery(QueryBuilderCustom.java:25) ~[classes/:?]
+	at com.employify.controller.SearchController.searchStandardQuery(SearchController.java:30) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-13 20:03:21,405 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-9] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1] with root cause
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.employify.search.QueryBuilderCustom.buildQuery(QueryBuilderCustom.java:25) ~[classes/:?]
+	at com.employify.controller.SearchController.searchStandardQuery(SearchController.java:30) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-13 20:38:03,471 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 17712 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 20:38:03,498 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 20:38:04,513 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 20:38:04,620 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 92 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 20:38:04,976 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 20:38:05,005 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 28 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 20:38:05,863 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 20:38:05,897 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 20:38:05,899 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 20:38:05,901 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 20:38:06,132 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 20:38:06,133 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2523 ms
+2023-02-13 20:38:08,204 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 20:38:08,223 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 20:38:08,236 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 5.954 seconds (JVM running for 8.536)
+2023-02-13 20:38:20,683 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 20:38:20,683 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 20:38:20,684 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 20:41:47,576 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 4584 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 20:41:47,601 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 20:41:48,811 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 20:41:48,938 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 109 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 20:41:49,371 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 20:41:49,411 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 38 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 20:41:50,626 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 20:41:50,684 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 20:41:50,688 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 20:41:50,689 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 20:41:51,001 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 20:41:51,001 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3268 ms
+2023-02-13 20:41:53,751 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 20:41:53,777 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 20:41:53,793 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 7.527 seconds (JVM running for 10.111)
+2023-02-13 20:43:10,525 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 20:43:10,526 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-13 20:43:10,527 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 1 ms
+2023-02-13 20:45:51,410 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 5896 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 20:45:51,441 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 20:45:52,583 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 20:45:52,693 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 96 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 20:45:53,060 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 20:45:53,085 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 24 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 20:45:54,122 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 20:45:54,168 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 20:45:54,170 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 20:45:54,172 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 20:45:54,432 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 20:45:54,433 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2867 ms
+2023-02-13 20:45:57,842 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 20:45:57,871 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 20:45:57,888 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 7.831 seconds (JVM running for 10.801)
+2023-02-13 20:46:05,330 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 20:46:05,331 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 20:46:05,332 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 21:03:31,873 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 12608 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 21:03:31,903 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:03:33,225 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:03:33,375 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 127 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:03:33,805 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:03:33,839 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 31 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:03:34,898 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:03:34,943 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:03:34,944 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:03:34,944 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:03:35,195 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:03:35,195 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3177 ms
+2023-02-13 21:03:37,795 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:03:37,815 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:03:37,838 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 7.295 seconds (JVM running for 10.007)
+2023-02-13 21:03:50,076 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:03:50,076 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:03:50,077 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 21:07:55,266 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 6732 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 21:07:55,291 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:07:56,294 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:07:56,378 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 74 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:07:56,706 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:07:56,742 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 35 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:07:57,587 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:07:57,623 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:07:57,626 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:07:57,627 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:07:57,879 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:07:57,880 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2480 ms
+2023-02-13 21:08:00,063 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:08:00,102 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:08:00,116 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.035 seconds (JVM running for 8.195)
+2023-02-13 21:08:16,386 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:08:16,387 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:08:16,388 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 21:09:22,808 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 16256 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 21:09:22,837 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:09:24,072 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:09:24,211 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 124 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:09:24,591 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:09:24,624 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 31 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:09:25,789 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:09:25,835 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:09:25,839 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:09:25,840 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:09:26,131 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:09:26,132 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3168 ms
+2023-02-13 21:09:28,882 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:09:28,906 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:09:28,927 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 7.655 seconds (JVM running for 11.053)
+2023-02-13 21:09:38,733 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:09:38,734 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:09:38,736 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-13 21:20:46,748 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 2516 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 21:20:46,776 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:20:47,801 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:20:47,887 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 75 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:20:48,196 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:20:48,233 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 36 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:20:49,083 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:20:49,120 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:20:49,122 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:20:49,125 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:20:49,378 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:20:49,378 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2498 ms
+2023-02-13 21:20:51,528 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:20:51,550 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:20:51,565 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 5.994 seconds (JVM running for 8.149)
+2023-02-13 21:22:08,589 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:22:08,590 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:22:08,591 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 21:23:30,265 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 4660 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 21:23:30,290 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:23:31,309 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:23:31,401 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 80 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:23:31,725 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:23:31,740 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:23:32,610 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:23:32,650 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:23:32,651 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:23:32,654 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:23:32,897 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:23:32,897 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2495 ms
+2023-02-13 21:23:35,051 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:23:35,089 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:23:35,103 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 6.04 seconds (JVM running for 8.216)
+2023-02-13 21:23:41,781 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:23:41,782 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:23:41,783 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 21:24:23,616 INFO o.s.b.StartupInfoLogger [main] Starting UddApplication using Java 17.0.4.1 on KATARINA with PID 8612 (C:\Users\PC\Downloads\udd-main\udd-main\udd\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\udd)
+2023-02-13 21:24:23,655 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:24:24,801 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:24:24,921 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 106 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:24:25,323 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:24:25,334 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 10 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:24:26,327 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:24:26,386 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:24:26,390 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:24:26,391 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:24:26,690 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:24:26,691 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2869 ms
+2023-02-13 21:24:29,069 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:24:29,090 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:24:29,109 INFO o.s.b.StartupInfoLogger [main] Started UddApplication in 7.158 seconds (JVM running for 9.497)
+2023-02-13 21:24:41,571 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:24:41,572 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:24:41,573 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 21:39:35,044 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 13080 (C:\Users\PC\Downloads\udd-main\udd-main\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Downloads\udd-main\udd-main\EmployifySearchBack)
+2023-02-13 21:39:35,071 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:39:36,154 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:39:36,262 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 97 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:39:36,667 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:39:36,679 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 11 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:39:37,627 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:39:37,666 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:39:37,668 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:39:37,670 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:39:37,924 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:39:37,925 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2708 ms
+2023-02-13 21:39:40,138 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:39:40,159 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:39:40,174 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.326 seconds (JVM running for 10.274)
+2023-02-13 21:40:28,469 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:40:28,470 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:40:28,472 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-13 21:44:27,668 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 9880 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 21:44:27,692 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:44:28,816 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:44:28,923 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 94 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:44:29,328 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:44:29,338 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 9 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:44:30,255 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:44:30,292 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:44:30,294 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:44:30,296 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:44:30,552 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:44:30,553 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2690 ms
+2023-02-13 21:44:32,951 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:44:32,972 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:44:32,988 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.532 seconds (JVM running for 9.237)
+2023-02-13 21:45:37,151 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:45:37,151 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:45:37,154 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 2 ms
+2023-02-13 21:48:53,046 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 16220 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 21:48:53,075 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:48:54,190 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:48:54,301 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 99 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:48:54,702 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:48:54,713 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 10 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:48:55,611 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:48:55,647 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:48:55,649 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:48:55,651 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:48:55,918 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:48:55,919 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2731 ms
+2023-02-13 21:48:58,340 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:48:58,361 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:48:58,376 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.559 seconds (JVM running for 9.016)
+2023-02-13 21:49:06,982 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:49:06,982 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:49:06,986 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-13 21:49:29,327 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 7076 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 21:49:29,358 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:49:30,367 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:49:30,473 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 93 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:49:30,822 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:49:30,832 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 8 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:49:31,738 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:49:31,781 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:49:31,785 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:49:31,787 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:49:32,048 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:49:32,049 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2569 ms
+2023-02-13 21:49:34,418 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:49:34,441 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:49:34,459 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.326 seconds (JVM running for 8.599)
+2023-02-13 21:50:25,095 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:50:25,095 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:50:25,097 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 1 ms
+2023-02-13 21:56:00,463 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 12888 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 21:56:00,489 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:56:01,511 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:56:01,630 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 106 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:56:02,015 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:56:02,026 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 9 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:56:02,946 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:56:02,982 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:56:02,983 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:56:02,986 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:56:03,241 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:56:03,241 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2623 ms
+2023-02-13 21:56:05,408 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:56:05,446 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:56:05,460 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.213 seconds (JVM running for 9.131)
+2023-02-13 21:56:12,951 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:56:12,952 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:56:12,953 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 21:58:13,772 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 11392 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 21:58:13,802 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 21:58:14,824 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:58:14,925 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 87 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 21:58:15,292 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 21:58:15,304 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 11 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 21:58:16,199 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 21:58:16,240 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:58:16,242 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 21:58:16,244 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 21:58:16,497 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 21:58:16,498 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2584 ms
+2023-02-13 21:58:18,591 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 21:58:18,612 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 21:58:18,627 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.021 seconds (JVM running for 8.587)
+2023-02-13 21:58:26,287 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 21:58:26,288 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 21:58:26,289 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 22:02:29,702 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 3980 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 22:02:29,742 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 22:02:30,713 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:02:30,817 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 93 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 22:02:31,146 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:02:31,155 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 8 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 22:02:32,052 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 22:02:32,087 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:02:32,089 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 22:02:32,091 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 22:02:32,352 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 22:02:32,353 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2506 ms
+2023-02-13 22:02:34,813 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:02:34,832 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 22:02:34,846 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.33 seconds (JVM running for 8.585)
+2023-02-13 22:02:41,940 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 22:02:41,940 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 22:02:41,942 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 22:05:45,577 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 11560 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 22:05:45,609 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 22:05:46,613 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:05:46,723 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 96 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 22:05:47,149 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:05:47,160 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 9 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 22:05:48,033 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 22:05:48,070 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:05:48,072 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 22:05:48,074 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 22:05:48,310 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 22:05:48,311 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2594 ms
+2023-02-13 22:05:50,437 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:05:50,474 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 22:05:50,488 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.075 seconds (JVM running for 8.563)
+2023-02-13 22:06:15,626 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 22:06:15,626 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-13 22:06:15,627 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 0 ms
+2023-02-13 22:06:36,864 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1] with root cause
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.employify.search.QueryBuilderCustom.buildQuery(QueryBuilderCustom.java:24) ~[classes/:?]
+	at com.employify.controller.SearchController.searchStandardQuery(SearchController.java:30) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-13 22:08:02,967 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 7380 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 22:08:02,997 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 22:08:04,422 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:08:04,568 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 131 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 22:08:05,067 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:08:05,121 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 52 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 22:08:06,355 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 22:08:06,401 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:08:06,403 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 22:08:06,405 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 22:08:06,730 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 22:08:06,731 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3614 ms
+2023-02-13 22:08:09,052 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:08:09,072 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 22:08:09,088 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 7.565 seconds (JVM running for 10.094)
+2023-02-13 22:08:29,657 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 22:08:29,658 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 22:08:29,660 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-13 22:09:19,420 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 16760 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 22:09:19,450 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 22:09:20,571 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:09:20,681 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 97 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 22:09:21,038 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:09:21,051 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 12 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 22:09:22,099 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 22:09:22,159 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:09:22,160 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 22:09:22,162 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 22:09:22,414 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 22:09:22,415 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2840 ms
+2023-02-13 22:09:25,089 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:09:25,114 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 22:09:25,130 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 7.173 seconds (JVM running for 11.1)
+2023-02-13 22:09:36,723 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 22:09:36,724 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 22:09:36,725 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-13 22:11:33,121 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 12272 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 22:11:33,149 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 22:11:34,143 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:11:34,262 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 105 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 22:11:34,626 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:11:34,636 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 9 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 22:11:35,495 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 22:11:35,531 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:11:35,533 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 22:11:35,535 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 22:11:35,765 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 22:11:35,766 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2510 ms
+2023-02-13 22:11:37,815 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:11:37,836 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 22:11:37,851 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.01 seconds (JVM running for 8.324)
+2023-02-13 22:12:03,609 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 22:12:03,609 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-13 22:12:03,611 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 1 ms
+2023-02-13 22:13:40,597 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 728 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 22:13:40,625 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 22:13:41,800 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:13:41,952 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 124 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 22:13:42,496 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:13:42,532 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 34 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 22:13:44,037 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 22:13:44,086 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:13:44,089 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 22:13:44,090 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 22:13:44,371 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 22:13:44,372 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3631 ms
+2023-02-13 22:13:47,376 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:13:47,401 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 22:13:47,418 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 8.16 seconds (JVM running for 11.338)
+2023-02-13 22:13:55,842 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 22:13:55,843 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 22:13:55,845 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-13 22:15:04,491 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 8636 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-13 22:15:04,516 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-13 22:15:05,552 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:15:05,668 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 102 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-13 22:15:06,028 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-13 22:15:06,038 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 9 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-13 22:15:06,913 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-13 22:15:06,947 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:15:06,949 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-13 22:15:06,950 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-13 22:15:07,187 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-13 22:15:07,188 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2563 ms
+2023-02-13 22:15:09,333 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-13 22:15:09,353 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-13 22:15:09,367 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.114 seconds (JVM running for 8.399)
+2023-02-13 22:18:12,710 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 22:18:12,710 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-13 22:18:12,712 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 0 ms
