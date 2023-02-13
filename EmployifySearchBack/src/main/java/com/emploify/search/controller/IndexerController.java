@@ -47,29 +47,23 @@ public class IndexerController {
 
     private void indexUploadedFile(FileUploadDTO fileUploadDTO) throws IOException{
 
-            String fileNameCv = saveUploadedFile(fileUploadDTO.getCv());
-            String fileNameCl = saveUploadedFile(fileUploadDTO.getCoverLetter());
+            String fileNameCv = indexer.saveUploadedFile(fileUploadDTO.getCv());
+            String fileNameCl = indexer.saveUploadedFile(fileUploadDTO.getCoverLetter());
             if(fileNameCl != null && fileNameCv != null){
                 IndexUnit indexUnit = new IndexUnit();
                 indexUnit.setFirstName(fileUploadDTO.getFirstName());
                 indexUnit.setLastName(fileUploadDTO.getLastName());
                 indexUnit.setAddress(fileUploadDTO.getAddress());
                 indexUnit.setEducation(fileUploadDTO.getEducation());
+                indexUnit.setCvPath(DATA_DIR_PATH + fileUploadDTO.getCv().getOriginalFilename());
+                indexUnit.setCvContent(indexer.parseFile(fileUploadDTO.getCv()));
+                indexUnit.setClPath(DATA_DIR_PATH + fileUploadDTO.getCoverLetter().getOriginalFilename());
+                indexUnit.setCoverLetterContent(indexer.parseFile(fileUploadDTO.getCoverLetter()));
                 indexer.add(indexUnit);
             }
 
     }
 
-    private String saveUploadedFile(MultipartFile file) throws IOException {
-        String retVal = null;
-        if (!file.isEmpty()) {
-            byte[] bytes = file.getBytes();
-            System.out.println(file.getOriginalFilename());
-            File path = new File(DATA_DIR_PATH + file.getOriginalFilename());
-            Files.write(Paths.get(path.getAbsolutePath()), bytes);
-            retVal = path.toString();
-        }
-        return retVal;
-    }
+
 
 }

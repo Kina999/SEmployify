@@ -20,5 +20,7 @@ public class IndexUnit {
     public String address;
     public String education;
     public String cvContent;
+    public String cvPath;
     public String coverLetterContent;
+    public String clPath;
 }

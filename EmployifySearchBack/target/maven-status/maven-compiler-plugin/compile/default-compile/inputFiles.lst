@@ -1,0 +1,13 @@
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\model\IndexUnit.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\config\ElasticSearchConfiguration.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\indexer\Indexer.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\EmploifySearchApplication.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\model\SearchType.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\result\CustomQueryBuilder.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\result\ResultRetriever.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\dto\FileUploadDTO.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\controller\SearchController.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\dto\SearchResponseDTO.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\repository\DocumentRepository.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\controller\IndexerController.java
+C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\src\main\java\com\emploify\search\dto\StandardQueryDTO.java
