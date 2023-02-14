@@ -6,6 +6,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 import org.springframework.data.elasticsearch.annotations.Setting;
+import org.springframework.data.elasticsearch.core.geo.GeoPoint;
 
 @Builder
 @Setter
@@ -24,8 +25,12 @@ public class IndexUnit {
     public String firstName;
     @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
     public String lastName;
-    @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
-    public String address;
+//    @Field(type = FieldType.Double, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
+//    public double longitude;
+//    @Field(type = FieldType.Double, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
+//    public double latitude;
+    @Field(type = FieldType.Double, store = true)
+    public GeoPoint geoPoint;
     @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
     public String education;
     @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)

@@ -83,7 +83,8 @@ public class ResultRetriever {
 		resultData.setHighlight("");
 		resultData.setFirstName(cvIndexUnit.getFirstName());
 		resultData.setLastName(cvIndexUnit.getLastName());
-		resultData.setAddress(cvIndexUnit.getAddress());
+		resultData.setLongitude(cvIndexUnit.getGeoPoint().getLon());
+		resultData.setLatitude(cvIndexUnit.geoPoint.getLat());
 		resultData.setEducation(cvIndexUnit.getEducation());
 		resultData.setCvPath(cvIndexUnit.getCvPath());
 		resultData.setCvContent(cvIndexUnit.getCvContent());

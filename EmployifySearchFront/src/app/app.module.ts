@@ -8,19 +8,25 @@ import { SearchComponent } from './search/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchBoolComponent } from './search-bool/search-bool/search-bool.component';
+import { SearchGeoComponent } from './search-geo/search-geo/search-geo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GeoapifyGeocoderAutocompleteModule } from '@geoapify/angular-geocoder-autocomplete';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SearchComponent,
-    SearchBoolComponent
+    SearchBoolComponent,
+    SearchGeoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GeoapifyGeocoderAutocompleteModule.withConfig('4a570a3a30fc44b5a54d9920bba1030f'),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

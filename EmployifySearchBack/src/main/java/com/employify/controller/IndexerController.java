@@ -5,6 +5,7 @@ import com.employify.indexer.Indexer;
 import com.employify.model.IndexUnit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.elasticsearch.core.geo.GeoPoint;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -46,7 +47,7 @@ public class IndexerController {
             IndexUnit indexUnit = new IndexUnit();
             indexUnit.setFirstName(fileUploadDTO.getFirstName());
             indexUnit.setLastName(fileUploadDTO.getLastName());
-            indexUnit.setAddress(fileUploadDTO.getAddress());
+            indexUnit.setGeoPoint(new GeoPoint(fileUploadDTO.getLatitude(), fileUploadDTO.getLongitude()));
             indexUnit.setEducation(fileUploadDTO.getEducation());
             indexUnit.setCvPath(fileUploadDTO.getCv().getOriginalFilename());
             indexUnit.setCvContent(indexer.parseFile(fileUploadDTO.getCv()));

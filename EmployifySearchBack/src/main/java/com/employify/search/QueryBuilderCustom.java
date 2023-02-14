@@ -20,9 +20,9 @@ public class QueryBuilderCustom {
 	public static QueryBuilder buildQuery(SearchType queryType, String field, String value) throws IllegalArgumentException {
 		validateQueryFields(field, value);
 		if(field.equals("firstNameAndLastName")){
-			return createNameLastNameQuery(value);
+			return createNameLastNameQuery(value, queryType);
 		}else if(queryType.equals(SearchType.REGULAR)){
-			return QueryBuilders.fuzzyQuery(field, value);
+			return QueryBuilders.matchQuery(field, value);
 		} else if(queryType.equals(SearchType.PHRASE)) {
 			return QueryBuilders.matchPhraseQuery(field, value);
 		}
@@ -30,14 +30,20 @@ public class QueryBuilderCustom {
 	}
 
 	public static QueryBuilder buildBoolQuery(BoolQueryDTO queryDto){
+
 		BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
-		if(queryDto.isOr()){
-			boolQuery.should(QueryBuilders.fuzzyQuery(queryDto.getFirstField(), queryDto.getFirstValue()));
-			boolQuery.should(QueryBuilders.fuzzyQuery(queryDto.getSecondField(), queryDto.getSecondValue()));
-		}else{
-			boolQuery.must(QueryBuilders.fuzzyQuery(queryDto.getFirstField(), queryDto.getFirstValue()));
-			boolQuery.must(QueryBuilders.fuzzyQuery(queryDto.getSecondField(), queryDto.getSecondValue()));
-		}
+		QueryBuilder firstField;
+		QueryBuilder secondField;
+
+		if(queryDto.isFirstPhrase()){firstField = QueryBuilders.matchPhraseQuery(queryDto.getFirstField(), queryDto.getFirstValue());
+		}else{firstField = QueryBuilders.matchQuery(queryDto.getFirstField(), queryDto.getFirstValue());}
+
+		if(queryDto.isSecondPhrase()){secondField = QueryBuilders.matchPhraseQuery(queryDto.getSecondField(), queryDto.getSecondValue());
+		}else{secondField = QueryBuilders.matchQuery(queryDto.getSecondField(), queryDto.getSecondValue());}
+
+		if(queryDto.isOr()){boolQuery.should(firstField);boolQuery.should(secondField);
+		}else{boolQuery.must(firstField);boolQuery.must(secondField);}
+
 		return boolQuery;
 	}
 
@@ -55,14 +61,23 @@ public class QueryBuilderCustom {
 		}
 	}
 
-	private static QueryBuilder createNameLastNameQuery(String value){
+	private static QueryBuilder createNameLastNameQuery(String value, SearchType queryType){
 		BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
 		String name = value.split("!")[0];;
 		String lastName = "";
 		try{lastName = value.split("!")[1];
 		}catch(Exception e){lastName = null;}
-		if(!name.equals("")){boolQuery.must(QueryBuilders.fuzzyQuery("firstName", name));}
-		if(lastName != null){boolQuery.must(QueryBuilders.fuzzyQuery("lastName", lastName));}
+		QueryBuilder nameQB;
+		QueryBuilder lastNameQB;
+		if(queryType.equals(SearchType.REGULAR)){
+			nameQB = QueryBuilders.fuzzyQuery("firstName", name);
+			lastNameQB = QueryBuilders.fuzzyQuery("firstName", name);
+		} else {
+			nameQB = QueryBuilders.matchPhraseQuery("firstName", name);
+			lastNameQB = QueryBuilders.matchPhraseQuery("firstName", name);
+		}
+		if(!name.equals("")){boolQuery.must(nameQB);}
+		if(lastName != null){boolQuery.must(lastNameQB);}
 		return boolQuery;
 	}
 

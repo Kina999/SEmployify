@@ -15,6 +15,7 @@ export class SearchComponent implements OnInit {
   name: string = '';
   lastName: string = '';
   searchResult: SearchResultDTO[] = [];
+  phrase: boolean = false;
 
   constructor(private searchService: SearchServiceService) { }
 
@@ -29,7 +30,7 @@ export class SearchComponent implements OnInit {
     else if (this.select == 1) { fieldV = "coverLetterContent"; valueV = this.searchString; }
     else if (this.select == 2) { fieldV = "firstNameAndLastName"; valueV = this.name + "!" + this.lastName; }
     else if (this.select == 3) { fieldV = "education"; valueV = this.searchString; }
-    let searchDTO: SearchDTO = { "value": valueV, "field": fieldV };
+    let searchDTO: SearchDTO = { "value": valueV, "field": fieldV , "isPhrase": this.phrase};
     this.searchService.searchStandard(searchDTO).subscribe((data: any) => {
       this.searchResult = data;
     }, (err) => {

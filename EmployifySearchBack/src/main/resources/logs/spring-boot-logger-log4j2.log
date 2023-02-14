@@ -2669,3 +2669,741 @@ java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
 2023-02-14 17:01:08,387 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-02-14 17:01:08,387 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
 2023-02-14 17:01:08,389 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-14 17:09:24,471 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 10916 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 17:09:24,500 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 17:09:25,643 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 17:09:25,748 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 92 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 17:09:26,120 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 17:09:26,138 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 16 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 17:09:27,147 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 17:09:27,208 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 17:09:27,210 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 17:09:27,213 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 17:09:27,476 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 17:09:27,477 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2847 ms
+2023-02-14 17:09:30,139 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 17:09:30,164 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 17:09:30,181 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 7.076 seconds (JVM running for 10.052)
+2023-02-14 17:09:56,178 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 17:09:56,179 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-14 17:09:56,181 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-14 17:28:19,059 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is RestStatusException{status=400} org.springframework.data.elasticsearch.RestStatusException: Elasticsearch exception [type=x_content_parse_exception, reason=[1:512] [highlight] failed to parse field [fields]]; nested exception is ElasticsearchStatusException[Elasticsearch exception [type=x_content_parse_exception, reason=[1:512] [highlight] failed to parse field [fields]]]; nested: ElasticsearchException[Elasticsearch exception [type=json_parse_exception, reason=Duplicate field 'firstName'
+ at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@2966de98; line: 1, column: 525]]];] with root cause
+org.elasticsearch.ElasticsearchException: Elasticsearch exception [type=json_parse_exception, reason=Duplicate field 'firstName'
+ at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@2966de98; line: 1, column: 525]]
+	at org.elasticsearch.ElasticsearchException.innerFromXContent(ElasticsearchException.java:485) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.ElasticsearchException.fromXContent(ElasticsearchException.java:396) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.ElasticsearchException.innerFromXContent(ElasticsearchException.java:426) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.ElasticsearchException.failureFromXContent(ElasticsearchException.java:592) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.rest.BytesRestResponse.errorFromXContent(BytesRestResponse.java:168) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.parseEntity(RestHighLevelClient.java:2011) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.parseResponseException(RestHighLevelClient.java:1988) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1745) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1702) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.performRequestAndParseEntity(RestHighLevelClient.java:1672) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.search(RestHighLevelClient.java:1128) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.lambda$search$11(ElasticsearchRestTemplate.java:317) ~[spring-data-elasticsearch-4.3.1.jar:4.3.1]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:408) ~[spring-data-elasticsearch-4.3.1.jar:4.3.1]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.search(ElasticsearchRestTemplate.java:317) ~[spring-data-elasticsearch-4.3.1.jar:4.3.1]
+	at com.employify.search.ResultRetriever.createRequest(ResultRetriever.java:51) ~[classes/:?]
+	at com.employify.search.ResultRetriever.getResults(ResultRetriever.java:37) ~[classes/:?]
+	at com.employify.controller.SearchController.searchBoolQuery(SearchController.java:37) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 17:30:55,394 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is RestStatusException{status=400} org.springframework.data.elasticsearch.RestStatusException: Elasticsearch exception [type=x_content_parse_exception, reason=[1:512] [highlight] failed to parse field [fields]]; nested exception is ElasticsearchStatusException[Elasticsearch exception [type=x_content_parse_exception, reason=[1:512] [highlight] failed to parse field [fields]]]; nested: ElasticsearchException[Elasticsearch exception [type=json_parse_exception, reason=Duplicate field 'firstName'
+ at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@19aea218; line: 1, column: 525]]];] with root cause
+org.elasticsearch.ElasticsearchException: Elasticsearch exception [type=json_parse_exception, reason=Duplicate field 'firstName'
+ at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@19aea218; line: 1, column: 525]]
+	at org.elasticsearch.ElasticsearchException.innerFromXContent(ElasticsearchException.java:485) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.ElasticsearchException.fromXContent(ElasticsearchException.java:396) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.ElasticsearchException.innerFromXContent(ElasticsearchException.java:426) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.ElasticsearchException.failureFromXContent(ElasticsearchException.java:592) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.rest.BytesRestResponse.errorFromXContent(BytesRestResponse.java:168) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.parseEntity(RestHighLevelClient.java:2011) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.parseResponseException(RestHighLevelClient.java:1988) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1745) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1702) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.performRequestAndParseEntity(RestHighLevelClient.java:1672) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.search(RestHighLevelClient.java:1128) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.lambda$search$11(ElasticsearchRestTemplate.java:317) ~[spring-data-elasticsearch-4.3.1.jar:4.3.1]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:408) ~[spring-data-elasticsearch-4.3.1.jar:4.3.1]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.search(ElasticsearchRestTemplate.java:317) ~[spring-data-elasticsearch-4.3.1.jar:4.3.1]
+	at com.employify.search.ResultRetriever.createRequest(ResultRetriever.java:51) ~[classes/:?]
+	at com.employify.search.ResultRetriever.getResults(ResultRetriever.java:37) ~[classes/:?]
+	at com.employify.controller.SearchController.searchBoolQuery(SearchController.java:37) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 17:30:56,031 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is RestStatusException{status=400} org.springframework.data.elasticsearch.RestStatusException: Elasticsearch exception [type=x_content_parse_exception, reason=[1:499] [highlight] failed to parse field [fields]]; nested exception is ElasticsearchStatusException[Elasticsearch exception [type=x_content_parse_exception, reason=[1:499] [highlight] failed to parse field [fields]]]; nested: ElasticsearchException[Elasticsearch exception [type=json_parse_exception, reason=Duplicate field 'cvContent'
+ at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@64bb586c; line: 1, column: 512]]];] with root cause
+org.elasticsearch.ElasticsearchException: Elasticsearch exception [type=json_parse_exception, reason=Duplicate field 'cvContent'
+ at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@64bb586c; line: 1, column: 512]]
+	at org.elasticsearch.ElasticsearchException.innerFromXContent(ElasticsearchException.java:485) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.ElasticsearchException.fromXContent(ElasticsearchException.java:396) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.ElasticsearchException.innerFromXContent(ElasticsearchException.java:426) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.ElasticsearchException.failureFromXContent(ElasticsearchException.java:592) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.rest.BytesRestResponse.errorFromXContent(BytesRestResponse.java:168) ~[elasticsearch-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.parseEntity(RestHighLevelClient.java:2011) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.parseResponseException(RestHighLevelClient.java:1988) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1745) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1702) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.performRequestAndParseEntity(RestHighLevelClient.java:1672) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.elasticsearch.client.RestHighLevelClient.search(RestHighLevelClient.java:1128) ~[elasticsearch-rest-high-level-client-7.15.2.jar:7.15.2]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.lambda$search$11(ElasticsearchRestTemplate.java:317) ~[spring-data-elasticsearch-4.3.1.jar:4.3.1]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:408) ~[spring-data-elasticsearch-4.3.1.jar:4.3.1]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.search(ElasticsearchRestTemplate.java:317) ~[spring-data-elasticsearch-4.3.1.jar:4.3.1]
+	at com.employify.search.ResultRetriever.createRequest(ResultRetriever.java:51) ~[classes/:?]
+	at com.employify.search.ResultRetriever.getResults(ResultRetriever.java:37) ~[classes/:?]
+	at com.employify.controller.SearchController.searchBoolQuery(SearchController.java:37) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 17:46:28,157 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 12456 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 17:46:28,182 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 17:46:29,181 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 17:46:29,283 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 90 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 17:46:29,628 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 17:46:29,645 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 15 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 17:46:30,476 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 17:46:30,513 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 17:46:30,514 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 17:46:30,516 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 17:46:30,765 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 17:46:30,766 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2479 ms
+2023-02-14 17:46:33,598 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 17:46:33,623 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 17:46:33,640 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.758 seconds (JVM running for 9.008)
+2023-02-14 17:46:33,826 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 17:46:33,827 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 17:46:33,831 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 3 ms
+2023-02-14 17:47:29,482 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 13404 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 17:47:29,511 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 17:47:30,480 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 17:47:30,562 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 72 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 17:47:30,880 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 17:47:30,896 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 15 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 17:47:31,737 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 17:47:31,773 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 17:47:31,774 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 17:47:31,776 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 17:47:32,010 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 17:47:32,010 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2396 ms
+2023-02-14 17:47:34,028 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 17:47:34,050 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 17:47:34,063 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 5.751 seconds (JVM running for 7.948)
+2023-02-14 17:47:52,735 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 17:47:52,735 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 17:47:52,737 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 0 ms
+2023-02-14 17:48:41,597 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 8600 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 17:48:41,625 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 17:48:42,602 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 17:48:42,690 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 78 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 17:48:42,999 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 17:48:43,029 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 17:48:43,868 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 17:48:43,904 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 17:48:43,906 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 17:48:43,908 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 17:48:44,136 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 17:48:44,151 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2404 ms
+2023-02-14 17:48:46,194 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 17:48:46,213 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 17:48:46,228 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 5.802 seconds (JVM running for 8.081)
+2023-02-14 17:48:50,655 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 17:48:50,656 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 17:48:50,657 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 1 ms
+2023-02-14 18:11:39,141 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Value not specified] with root cause
+java.lang.IllegalArgumentException: Value not specified
+	at com.employify.search.QueryBuilderCustom.validateQueryFields(QueryBuilderCustom.java:54) ~[classes/:?]
+	at com.employify.search.QueryBuilderCustom.buildQuery(QueryBuilderCustom.java:21) ~[classes/:?]
+	at com.employify.controller.SearchController.searchStandardQuery(SearchController.java:29) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 18:11:42,749 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Value not specified] with root cause
+java.lang.IllegalArgumentException: Value not specified
+	at com.employify.search.QueryBuilderCustom.validateQueryFields(QueryBuilderCustom.java:54) ~[classes/:?]
+	at com.employify.search.QueryBuilderCustom.buildQuery(QueryBuilderCustom.java:21) ~[classes/:?]
+	at com.employify.controller.SearchController.searchStandardQuery(SearchController.java:29) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 18:17:19,900 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 11708 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 18:17:19,929 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 18:17:21,028 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 18:17:21,132 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 92 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 18:17:21,506 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 18:17:21,523 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 16 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 18:17:22,525 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 18:17:22,568 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 18:17:22,570 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 18:17:22,571 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 18:17:22,813 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 18:17:22,813 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2765 ms
+2023-02-14 18:17:25,413 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 18:17:25,435 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 18:17:25,452 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.915 seconds (JVM running for 9.625)
+2023-02-14 18:17:50,078 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 18:17:50,078 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 18:17:50,078 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 0 ms
+2023-02-14 18:41:36,730 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 11200 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 18:41:36,759 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 18:41:37,729 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 18:41:37,816 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 76 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 18:41:38,143 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 18:41:38,163 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 17 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 18:41:39,008 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 18:41:39,044 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 18:41:39,046 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 18:41:39,048 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 18:41:39,287 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 18:41:39,288 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2423 ms
+2023-02-14 18:41:41,821 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 18:41:41,841 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 18:41:41,855 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.303 seconds (JVM running for 8.501)
+2023-02-14 18:41:57,359 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 18:41:57,359 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 18:41:57,375 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 16 ms
+2023-02-14 18:44:03,567 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 9384 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 18:44:03,596 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 18:44:04,643 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 18:44:04,752 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 98 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 18:44:05,088 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 18:44:05,106 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 16 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 18:44:06,171 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 18:44:06,214 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 18:44:06,215 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 18:44:06,217 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 18:44:06,470 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 18:44:06,471 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2754 ms
+2023-02-14 18:44:08,950 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 18:44:08,974 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 18:44:08,991 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.774 seconds (JVM running for 9.32)
+2023-02-14 18:47:10,041 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 18:47:10,042 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 18:47:10,045 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 2 ms
+2023-02-14 18:49:21,408 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 8416 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 18:49:21,440 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 18:49:22,570 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 18:49:22,719 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 138 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 18:49:23,149 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 18:49:23,184 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 34 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 18:49:24,295 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 18:49:24,338 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 18:49:24,340 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 18:49:24,341 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 18:49:24,594 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 18:49:24,594 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3038 ms
+2023-02-14 18:49:26,934 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 18:49:26,961 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 18:49:26,977 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.931 seconds (JVM running for 10.066)
+2023-02-14 18:51:12,379 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 18:51:12,379 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 18:51:12,380 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 1 ms
+2023-02-14 18:57:34,586 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 11836 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 18:57:34,614 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 18:57:35,708 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 18:57:35,816 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 97 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 18:57:36,164 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 18:57:36,179 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 18:57:37,187 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 18:57:37,231 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 18:57:37,232 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 18:57:37,234 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 18:57:37,492 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 18:57:37,493 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2759 ms
+2023-02-14 18:57:40,085 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 18:57:40,109 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 18:57:40,125 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.874 seconds (JVM running for 9.513)
+2023-02-14 19:03:29,456 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 19:03:29,457 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 19:03:29,458 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 1 ms
+2023-02-14 20:11:28,423 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 8308 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 20:11:28,450 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 20:11:29,445 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:11:29,530 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 74 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 20:11:29,846 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:11:29,876 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 20:11:30,685 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 20:11:30,720 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:11:30,722 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 20:11:30,724 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 20:11:30,959 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 20:11:30,959 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2399 ms
+2023-02-14 20:11:33,049 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:11:33,070 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 20:11:33,084 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 5.838 seconds (JVM running for 8.025)
+2023-02-14 20:12:40,362 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 20:12:40,362 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-14 20:12:40,363 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-14 20:13:16,137 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 12584 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 20:13:16,161 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 20:13:17,308 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:13:17,464 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 137 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 20:13:17,933 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:13:17,964 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 34 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 20:13:19,464 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 20:13:19,511 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:13:19,511 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 20:13:19,511 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 20:13:19,808 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 20:13:19,823 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3543 ms
+2023-02-14 20:13:22,236 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:13:22,251 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 20:13:22,267 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 7.579 seconds (JVM running for 10.432)
+2023-02-14 20:15:19,780 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 20:15:19,780 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 20:15:19,797 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 17 ms
+2023-02-14 20:15:27,373 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]; nested exception is java.lang.RuntimeException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]] with root cause
+java.net.SocketTimeoutException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]
+	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.timeout(HttpAsyncRequestExecutor.java:387) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:98) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:40) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.timeout(AbstractIODispatch.java:175) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.sessionTimedOut(BaseIOReactor.java:261) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.timeoutCheck(AbstractIOReactor.java:506) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:211) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 20:16:52,504 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 12676 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 20:16:52,532 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 20:16:53,615 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:16:53,728 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 100 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 20:16:54,076 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:16:54,093 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 16 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 20:16:55,131 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 20:16:55,176 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:16:55,178 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 20:16:55,180 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 20:16:55,423 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 20:16:55,424 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2776 ms
+2023-02-14 20:16:57,903 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:16:57,927 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 20:16:57,943 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.776 seconds (JVM running for 9.281)
+2023-02-14 20:17:49,693 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 20:17:49,694 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 20:17:49,694 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 0 ms
+2023-02-14 20:19:05,509 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]; nested exception is java.lang.RuntimeException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]] with root cause
+java.net.SocketTimeoutException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]
+	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.timeout(HttpAsyncRequestExecutor.java:387) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:98) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:40) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.timeout(AbstractIODispatch.java:175) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.sessionTimedOut(BaseIOReactor.java:261) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.timeoutCheck(AbstractIOReactor.java:506) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:211) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 20:19:36,757 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: 5,000 milliseconds timeout on connection http-outgoing-1 [ACTIVE]; nested exception is java.lang.RuntimeException: 5,000 milliseconds timeout on connection http-outgoing-1 [ACTIVE]] with root cause
+java.net.SocketTimeoutException: 5,000 milliseconds timeout on connection http-outgoing-1 [ACTIVE]
+	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.timeout(HttpAsyncRequestExecutor.java:387) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:98) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:40) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.timeout(AbstractIODispatch.java:175) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.sessionTimedOut(BaseIOReactor.java:261) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.timeoutCheck(AbstractIOReactor.java:506) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:211) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 20:20:42,893 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 1972 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 20:20:42,921 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 20:20:44,028 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:20:44,134 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 93 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 20:20:44,493 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:20:44,509 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 20:20:45,503 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 20:20:45,563 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:20:45,565 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 20:20:45,567 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 20:20:45,821 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 20:20:45,822 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2778 ms
+2023-02-14 20:20:48,455 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:20:48,478 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 20:20:48,493 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.941 seconds (JVM running for 9.636)
+2023-02-14 20:21:12,924 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 20:21:12,924 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 20:21:12,924 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 0 ms
+2023-02-14 20:22:25,280 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]; nested exception is java.lang.RuntimeException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]] with root cause
+java.net.SocketTimeoutException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]
+	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.timeout(HttpAsyncRequestExecutor.java:387) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:98) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:40) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.timeout(AbstractIODispatch.java:175) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.sessionTimedOut(BaseIOReactor.java:261) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.timeoutCheck(AbstractIOReactor.java:506) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:211) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 20:22:45,808 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 8532 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 20:22:45,838 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 20:22:46,861 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:22:46,986 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 102 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 20:22:47,346 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:22:47,399 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 37 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 20:22:49,099 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 20:22:49,149 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:22:49,149 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 20:22:49,149 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 20:22:49,433 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 20:22:49,448 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3489 ms
+2023-02-14 20:22:52,967 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:22:52,982 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 20:22:52,998 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 9.05 seconds (JVM running for 11.364)
+2023-02-14 20:22:57,153 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 20:22:57,153 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 20:22:57,155 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 1 ms
+2023-02-14 20:23:04,294 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]; nested exception is java.lang.RuntimeException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]] with root cause
+java.net.SocketTimeoutException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]
+	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.timeout(HttpAsyncRequestExecutor.java:387) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:98) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:40) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.timeout(AbstractIODispatch.java:175) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.sessionTimedOut(BaseIOReactor.java:261) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.timeoutCheck(AbstractIOReactor.java:506) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:211) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 20:26:21,113 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 13132 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 20:26:21,148 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 20:26:22,126 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:26:22,215 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 77 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 20:26:22,533 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:26:22,553 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 18 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 20:26:23,451 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 20:26:23,488 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:26:23,490 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 20:26:23,492 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 20:26:23,719 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 20:26:23,719 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2462 ms
+2023-02-14 20:26:25,700 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:26:25,719 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 20:26:25,733 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 5.792 seconds (JVM running for 7.951)
+2023-02-14 20:26:50,220 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 20:26:50,221 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 20:26:50,223 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 1 ms
+2023-02-14 20:28:47,558 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 8560 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 20:28:47,584 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 20:28:48,556 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:28:48,641 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 74 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 20:28:48,964 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:28:48,997 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 31 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 20:28:49,820 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 20:28:49,855 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:28:49,856 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 20:28:49,859 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 20:28:50,094 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 20:28:50,095 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2398 ms
+2023-02-14 20:28:52,133 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:28:52,154 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 20:28:52,167 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 5.773 seconds (JVM running for 7.935)
+2023-02-14 20:29:20,175 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 20:29:20,175 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 20:29:20,177 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 1 ms
+2023-02-14 20:29:27,550 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]; nested exception is java.lang.RuntimeException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]] with root cause
+java.net.SocketTimeoutException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]
+	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.timeout(HttpAsyncRequestExecutor.java:387) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:98) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:40) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.timeout(AbstractIODispatch.java:175) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.sessionTimedOut(BaseIOReactor.java:261) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.timeoutCheck(AbstractIOReactor.java:506) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:211) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 20:34:49,794 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 19452 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 20:34:49,832 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 20:34:51,471 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:34:51,686 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 186 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 20:34:52,647 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:34:52,700 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 51 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 20:34:55,691 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 20:34:55,847 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:34:55,849 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 20:34:55,851 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 20:34:56,220 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 20:34:56,221 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6247 ms
+2023-02-14 20:35:03,988 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:35:04,020 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 20:35:04,051 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 16.233 seconds (JVM running for 19.917)
+2023-02-14 20:35:18,608 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 20:35:18,608 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 20:35:18,608 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 0 ms
+2023-02-14 20:35:48,891 ERROR o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]; nested exception is java.lang.RuntimeException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]] with root cause
+java.net.SocketTimeoutException: 5,000 milliseconds timeout on connection http-outgoing-0 [ACTIVE]
+	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.timeout(HttpAsyncRequestExecutor.java:387) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:98) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onTimeout(InternalIODispatch.java:40) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.timeout(AbstractIODispatch.java:175) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.sessionTimedOut(BaseIOReactor.java:261) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.timeoutCheck(AbstractIOReactor.java:506) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:211) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-02-14 20:39:48,758 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 16780 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-14 20:39:48,789 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-14 20:39:50,535 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:39:50,737 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 167 ms. Found 1 Elasticsearch repository interfaces.
+2023-02-14 20:39:51,254 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-14 20:39:51,282 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 26 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-14 20:39:52,883 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-14 20:39:52,995 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:39:53,005 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-14 20:39:53,008 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-14 20:39:53,708 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-14 20:39:53,708 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4782 ms
+2023-02-14 20:39:58,735 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-14 20:39:58,811 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-14 20:39:58,849 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 11.843 seconds (JVM running for 15.138)
+2023-02-14 20:40:23,518 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-14 20:40:23,518 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-14 20:40:23,518 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 0 ms

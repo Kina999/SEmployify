@@ -14,6 +14,8 @@ public class FileUploadDTO {
     private String firstName;
     private String lastName;
     private String address;
+    private double longitude;
+    private double latitude;
     private String education;
     private MultipartFile cv;
     private MultipartFile coverLetter;

@@ -16,6 +16,8 @@ export class SearchBoolComponent implements OnInit {
   secondString: string = '';
   isOr: number = 0;
   searchResult: SearchResultDTO[] = [];
+  firstPhrase: boolean = false;
+  secondPhrase: boolean = false;
 
   constructor(private searchService: SearchServiceService) { }
 
@@ -40,7 +42,7 @@ export class SearchBoolComponent implements OnInit {
     else if (this.secondSelect == 4) { secondFieldV = "education"; secondValueV = this.secondString; }
     var isOr = false;
     if(this.isOr == 1){isOr = true;}
-    let searchBoolDTO: SearchBoolDTO = { "firstValue": firstValueV, "firstField": firstFieldV, "secondValue": secondValueV, "secondField": secondFieldV,"isOr": isOr};
+    let searchBoolDTO: SearchBoolDTO = { "firstValue": firstValueV, "firstField": firstFieldV, "secondValue": secondValueV, "secondField": secondFieldV,"isOr": isOr, "isFirstPhrase": this.firstPhrase, "isSecondPhrase": this.secondPhrase};
     this.searchService.searchBool(searchBoolDTO).subscribe((data: any) => {
       this.searchResult = data;
     }, (err) => {

@@ -1,5 +1,6 @@
 package com.employify.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,4 +13,6 @@ import lombok.Setter;
 public class StandardQueryDTO {
     private String value;
     private String field;
+    @JsonProperty
+    private boolean isPhrase;
 }

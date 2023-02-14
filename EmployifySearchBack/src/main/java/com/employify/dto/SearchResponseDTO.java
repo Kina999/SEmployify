@@ -12,7 +12,8 @@ import lombok.Setter;
 public class SearchResponseDTO {
     private String firstName;
     private String lastName;
-    private String address;
+    private double longitude;
+    private double latitude;
     private String education;
     private String cvPath;
     private String cvContent;

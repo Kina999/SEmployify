@@ -26,7 +26,7 @@ public class SearchController {
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping(value = "/standard")
     public ResponseEntity<?> searchStandardQuery(@RequestBody StandardQueryDTO queryDto) throws Exception {
-        QueryBuilder query = QueryBuilderCustom.buildQuery(SearchType.REGULAR, queryDto.getField(), queryDto.getValue());
+        QueryBuilder query = QueryBuilderCustom.buildQuery(queryDto.isPhrase() ? SearchType.PHRASE : SearchType.REGULAR, queryDto.getField(), queryDto.getValue());
         return new ResponseEntity<>(resultRetriever.getResults(query, resultRetriever.getHighlightBuilder(queryDto.getField())), HttpStatus.OK);
     }
 

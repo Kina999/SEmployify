@@ -1,0 +1,14 @@
+<div style="padding-top: 10%; margin-left: 15%;">
+    <div class="input-group mb-3" style="width: 80%; margin-left: 15%;">
+        <div class="mb-3" style="width: 30%;">
+            <geoapify-geocoder-autocomplete class="round-borders" (placeSelect)="placeSelected($event)">
+            </geoapify-geocoder-autocomplete>
+        </div>
+        <div class="mb-3" style="width: 20%; margin-right: 3%;">
+            <input type="number" placeholder="Radius (km)" class="form-control" id="exampleInputPassword1" name="radius">
+        </div>
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Pretrazi</button>
+        </div>
+    </div>
+</div>

@@ -4,5 +4,7 @@ export interface SearchBoolDTO {
     secondValue: string
     secondField: string
     isOr: boolean
+    isFirstPhrase: boolean
+    isSecondPhrase: boolean
 }
   

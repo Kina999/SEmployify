@@ -17,4 +17,8 @@ public class BoolQueryDTO {
     private String secondValue;
     @JsonProperty
     private boolean isOr;
+    @JsonProperty
+    private boolean isFirstPhrase;
+    @JsonProperty
+    private boolean isSecondPhrase;
 }
