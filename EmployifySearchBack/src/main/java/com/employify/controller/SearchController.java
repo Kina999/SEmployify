@@ -34,7 +34,7 @@ public class SearchController {
     @PostMapping(value = "/bool")
     public ResponseEntity<?> searchBoolQuery(@RequestBody BoolQueryDTO queryDto) throws Exception {
         QueryBuilder query = QueryBuilderCustom.buildBoolQuery(queryDto);
-        //return new ResponseEntity<>(resultRetriever.getResults(query, resultRetriever.getHighlightBuilder(queryDto.getField())), HttpStatus.OK);
-        return null;
+        return new ResponseEntity<>(resultRetriever.getResults(query,
+                resultRetriever.getBoolHighlightBuilder(queryDto.getFirstField(), queryDto.getSecondField())), HttpStatus.OK);
     }
 }

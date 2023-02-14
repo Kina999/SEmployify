@@ -109,4 +109,16 @@ public class ResultRetriever {
 		return highlightBuilder;
 	}
 
+	public HighlightBuilder getBoolHighlightBuilder(String firstField, String secondField){
+
+		HighlightBuilder highlightBuilder = new HighlightBuilder();
+		highlightBuilder.field(firstField);
+		highlightBuilder.field(secondField);
+		highlightBuilder.preTags("<b>");
+		highlightBuilder.postTags("</b>");
+		highlightBuilder.numOfFragments(3);
+		highlightBuilder.fragmentSize(150);
+		return highlightBuilder;
+	}
+
 }

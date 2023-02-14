@@ -30,8 +30,15 @@ public class QueryBuilderCustom {
 	}
 
 	public static QueryBuilder buildBoolQuery(BoolQueryDTO queryDto){
-
-		return null;
+		BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
+		if(queryDto.isOr()){
+			boolQuery.should(QueryBuilders.fuzzyQuery(queryDto.getFirstField(), queryDto.getFirstValue()));
+			boolQuery.should(QueryBuilders.fuzzyQuery(queryDto.getSecondField(), queryDto.getSecondValue()));
+		}else{
+			boolQuery.must(QueryBuilders.fuzzyQuery(queryDto.getFirstField(), queryDto.getFirstValue()));
+			boolQuery.must(QueryBuilders.fuzzyQuery(queryDto.getSecondField(), queryDto.getSecondValue()));
+		}
+		return boolQuery;
 	}
 
 	private static void validateQueryFields(String field, String value) {
@@ -54,8 +61,8 @@ public class QueryBuilderCustom {
 		String lastName = "";
 		try{lastName = value.split("!")[1];
 		}catch(Exception e){lastName = null;}
-		if(!name.equals("")){boolQuery.should(QueryBuilders.fuzzyQuery("firstName", name));}
-		if(lastName != null){boolQuery.should(QueryBuilders.fuzzyQuery("lastName", lastName));}
+		if(!name.equals("")){boolQuery.must(QueryBuilders.fuzzyQuery("firstName", name));}
+		if(lastName != null){boolQuery.must(QueryBuilders.fuzzyQuery("lastName", lastName));}
 		return boolQuery;
 	}
 

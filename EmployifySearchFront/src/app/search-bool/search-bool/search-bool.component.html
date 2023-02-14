@@ -1,34 +1,48 @@
 <div style="padding-top: 10%;">
-    <div class="input-group mb-3" style="width: 90%; margin-left: 12%;">
-        <input type="text" class="form-control" placeholder="Ime" aria-label="Name" aria-describedby="basic-addon2"
-            style="margin-right: 3%;margin-left: 1%; width: 15%;">
-        <select class="form-select" aria-label="Default select example" style="width: 5%; margin-right: 5%;">
+    <div class="input-group mb-3" style="width: 80%; margin-left: 12%;">
+        <select class="form-select" aria-label="Default select example" style="width: 5%; margin-right: 1%;"
+            name="firstSelect" [(ngModel)]="firstSelect">
+            <option selected value="0">Sadrzaj CV-ja</option>
+            <option value="1">Sadrzaj propratnog pisma</option>
+            <option value="2">Ime</option>
+            <option value="3">Prezime</option>
+            <option value="4">Obrazovanje</option>
+        </select>
+        <input type="text" class="form-control" placeholder="Pretrazite aplikante" aria-label="Pretrazite aplikante"
+            aria-describedby="basic-addon2" style="margin-right: 5%;width: 20%;" name="firstString"
+            [(ngModel)]="firstString">
+        <select class="form-select" aria-label="Default select example" style="width: 3%; margin-right: 5%;" name="isOr"
+            [(ngModel)]="isOr">
             <option selected value="0">AND</option>
             <option value="1">OR</option>
         </select>
-        <input type="text" class="form-control" placeholder="Prezime" aria-label="Last name"
-            aria-describedby="basic-addon2" style="margin-right: 3%;width: 15%;">
-        <select class="form-select" aria-label="Default select example" style="width: 5%; margin-right: 5%;">
-            <option selected value="0">AND</option>
-            <option value="1">OR</option>
-        </select>
-        <input type="text" class="form-control" placeholder="Education" aria-label="Education"
-            aria-describedby="basic-addon2" style="width: 15%; margin-right: 21%;">
-        
-        <select class="form-select" aria-label="Default select example" style="width: 2%; margin-right: 5%; margin-top: 3%;">
-            <option selected value="0">AND</option>
-            <option value="1">OR</option>
-        </select>
-        <input type="text" class="form-control" placeholder="Cv" aria-label="Cv" aria-describedby="basic-addon2"
-            style="margin-right: 3%;width: 20%; margin-top: 3%;">
-        <select class="form-select" aria-label="Default select example" style="width: 2%; margin-right: 5%; margin-top: 3%;">
-            <option selected value="0">AND</option>
-            <option value="1">OR</option>
-        </select>
-        <input type="text" class="form-control" placeholder="Cover letter" aria-label="Cover letter"
-            aria-describedby="basic-addon2" style="margin-right: 20%;width: 20%; margin-top: 3%;">
 
+        <select class="form-select" aria-label="Default select example" style="width: 5%; margin-right: 1%;"
+            name="secondSelect" [(ngModel)]="secondSelect">
+            <option selected value="0">Sadrzaj CV-ja</option>
+            <option value="1">Sadrzaj propratnog pisma</option>
+            <option value="2">Ime</option>
+            <option value="3">Prezime</option>
+            <option value="4">Obrazovanje</option>
+        </select>
+        <input type="text" class="form-control" placeholder="Pretrazite aplikante" aria-label="Pretrazite aplikante"
+            aria-describedby="basic-addon2" style="width: 20%;" name="secondString" [(ngModel)]="secondString">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="submit" (click)="search()">Pretrazi</button>
+        </div>
     </div>
-
+    <div class="list-group" style="width: 70%; margin: auto;">
+        <a href="#" class="list-group-item list-group-item-action" *ngFor="let result of searchResult; let i = index" style="margin-top: 3%;">
+            <div>
+                <h5 class="mb-1" [innerHTML]="result.firstName" style="display: inline;"></h5>
+                &nbsp;
+                <h5 class="mb-1" [innerHTML]="result.lastName" style="display: inline;"></h5>
+            </div>
+            <p class="mb-1" [innerHTML]="result.education"></p>
+            <p class="mb-1" [innerHTML]="result.highlight"></p>
+            <button class="btn btn-primary" type="submit" style="margin-right: 1%;" (click)="downloadCv(i)"><img src="./../../../assets/img/download.svg"/>  CV</button>
+            <button class="btn btn-primary" type="submit"><img src="./../../../assets/img/download.svg" (click)="downloadCl(i)"/>  CL</button>
+        </a>
+    </div>
 
 </div>
