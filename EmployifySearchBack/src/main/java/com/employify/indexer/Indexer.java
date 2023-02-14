@@ -22,6 +22,8 @@ public class Indexer {
 
     @Value("${dataDir}")
     private String DATA_DIR_PATH;
+    @Value("${dataDirF}")
+    private String DATA_DIR_PATH_F;
     private final DocumentRepository documentRepository;
 
     @Autowired
@@ -59,6 +61,9 @@ public class Indexer {
         if (!file.isEmpty()) {
             byte[] bytes = file.getBytes();
             System.out.println(file.getOriginalFilename());
+            File pathF = new File(DATA_DIR_PATH_F + file.getOriginalFilename());
+            Files.write(Paths.get(pathF.getAbsolutePath()), bytes);
+
             File path = new File(DATA_DIR_PATH + file.getOriginalFilename());
             Files.write(Paths.get(path.getAbsolutePath()), bytes);
             retVal = path.toString();

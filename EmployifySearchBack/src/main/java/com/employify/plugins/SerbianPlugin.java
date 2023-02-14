@@ -21,7 +21,7 @@ import org.elasticsearch.plugins.Plugin;
 
 public class SerbianPlugin extends Plugin implements AnalysisPlugin {
 
-	public static final String ANALYZER_NAME = "serbian-analyzer";
+	public static final String ANALYZER_NAME = "serbian";
 	public static final String FILTER_NAME = "serbian-stem";
 
 	public String name() {

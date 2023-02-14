@@ -1,16 +1,38 @@
 <div style="padding-top: 10%;">
     <div class="input-group mb-3" style="width: 60%; margin-left: 18%;">
-        <select class="form-select" aria-label="Default select example" style="width: 10%; margin-right: 5%;">
-            <option selected>Sadrzaj CV-ja</option>
+        <select class="form-select" aria-label="Default select example" style="width: 10%; margin-right: 5%;"
+            name="select" [(ngModel)]="select">
+            <option selected value="0">Sadrzaj CV-ja</option>
             <option value="1">Sadrzaj propratnog pisma</option>
             <option value="2">Ime i prezime</option>
-            <option value="4">Adresa</option>
-            <option value="5">Obrazovanje</option>
+            <option value="3">Obrazovanje</option>
         </select>
-        <input type="text" class="form-control" placeholder="Pretrazite aplikante" aria-label="Recipient's username"
-            style="width: 60%;" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-            <button class="btn btn-primary" type="submit">Search</button>
+        <div *ngIf="select != 2" style="width: 60%; margin-right: 5%;">
+            <input type="text" class="form-control" placeholder="Pretrazite aplikante" aria-label="Recipient's data"
+                aria-describedby="basic-addon2" name="name" [(ngModel)]="searchString">
         </div>
+        <div *ngIf="select == 2" style="width: 60%; margin-right: 5%; display: flex;">
+            <input type="text" class="form-control" placeholder="Ime" aria-label="Recipient's name"
+                aria-describedby="basic-addon2" style="margin-right: 3%;" name="name" [(ngModel)]="name">
+            <input type="text" class="form-control" placeholder="Prezime" aria-label="Recipient's lastName"
+                aria-describedby="basic-addon2" name="lastName" [(ngModel)]="lastName">
+        </div>
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="submit" (click)="search()">Search</button>
+        </div>
+    </div>
+
+    <div class="list-group" style="width: 70%; margin: auto;">
+        <a href="#" class="list-group-item list-group-item-action" *ngFor="let result of searchResult; let i = index" style="margin-top: 3%;">
+            <div>
+                <h5 class="mb-1" [innerHTML]="result.firstName" style="display: inline;"></h5>
+                &nbsp;
+                <h5 class="mb-1" [innerHTML]="result.lastName" style="display: inline;"></h5>
+            </div>
+            <p class="mb-1" [innerHTML]="result.education"></p>
+            <p class="mb-1" [innerHTML]="result.highlight"></p>
+            <button class="btn btn-primary" type="submit" style="margin-right: 1%;" (click)="downloadCv(i)"><img src="./../../../assets/img/download.svg"/>  CV</button>
+            <button class="btn btn-primary" type="submit"><img src="./../../../assets/img/download.svg" (click)="downloadCl(i)"/>  CL</button>
+        </a>
     </div>
 </div>

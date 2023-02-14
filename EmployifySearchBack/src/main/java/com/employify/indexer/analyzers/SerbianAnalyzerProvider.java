@@ -21,7 +21,7 @@ import org.elasticsearch.index.analysis.AbstractIndexAnalyzerProvider;
 @SuppressWarnings("rawtypes")
 public class SerbianAnalyzerProvider extends AbstractIndexAnalyzerProvider {
 
-	public static final String NAME = "serbian-analyzer";
+	public static final String NAME = "serbian";
 	private final SerbianAnalyzer analyzer;
 
 	public SerbianAnalyzerProvider(IndexSettings indexSettings, String name, Settings settings) throws IOException {

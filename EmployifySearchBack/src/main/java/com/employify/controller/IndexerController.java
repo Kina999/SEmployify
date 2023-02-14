@@ -15,10 +15,6 @@ import java.io.IOException;
 @RequestMapping("api/v1/index")
 public class IndexerController {
 
-    @Value("${dataDir}")
-    private String DATA_DIR_PATH;
-
-
     private final Indexer indexer;
 
     @Autowired
@@ -52,9 +48,9 @@ public class IndexerController {
             indexUnit.setLastName(fileUploadDTO.getLastName());
             indexUnit.setAddress(fileUploadDTO.getAddress());
             indexUnit.setEducation(fileUploadDTO.getEducation());
-            indexUnit.setCvPath(DATA_DIR_PATH + fileUploadDTO.getCv().getOriginalFilename());
+            indexUnit.setCvPath(fileUploadDTO.getCv().getOriginalFilename());
             indexUnit.setCvContent(indexer.parseFile(fileUploadDTO.getCv()));
-            indexUnit.setClPath(DATA_DIR_PATH + fileUploadDTO.getCoverLetter().getOriginalFilename());
+            indexUnit.setClPath(fileUploadDTO.getCoverLetter().getOriginalFilename());
             indexUnit.setCoverLetterContent(indexer.parseFile(fileUploadDTO.getCoverLetter()));
             indexer.add(indexUnit);
         }

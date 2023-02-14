@@ -10,6 +10,7 @@ import com.employify.repository.DocumentRepository;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.data.elasticsearch.core.SearchHits;
@@ -31,27 +32,20 @@ public class ResultRetriever {
 		this.documentRepository = documentRepository;
 	}
 
-	public List<SearchResponseDTO> getResults(QueryBuilder query) throws Exception {
+	public List<SearchResponseDTO> getResults(QueryBuilder query, HighlightBuilder highlightBuilder) throws Exception {
 		checkQuery(query);
-		SearchHits<IndexUnit> cvIndexHints = createRequest(query);
+		SearchHits<IndexUnit> cvIndexHints = createRequest(query, highlightBuilder);
 		return handleSearchHits(cvIndexHints);
 	}
 
-	private SearchHits<IndexUnit> createRequest(QueryBuilder query) {
+	private SearchHits<IndexUnit> createRequest(QueryBuilder query, HighlightBuilder highlightBuilder) {
 
-		BoolQueryBuilder mainBoolQuery = QueryBuilders.boolQuery();
-		mainBoolQuery.should(query);
-		//HighlightBuilder highlightBuilder = new HighlightBuilder();
-		//highlightBuilder.field("cvContent");
-		//highlightBuilder.field("clPath");
-		//highlightBuilder.preTags("<em>");
-		//highlightBuilder.postTags("</em>");
-		//highlightBuilder.numOfFragments(3);
-		//highlightBuilder.fragmentSize(150);
+//		BoolQueryBuilder mainBoolQuery = QueryBuilders.boolQuery();
+//		mainBoolQuery.should(query);
 
 		NativeSearchQuery searchQuery = new NativeSearchQueryBuilder()
-				.withQuery(mainBoolQuery)
-				.withHighlightBuilder(null)
+				.withQuery(query)
+				.withHighlightBuilder(highlightBuilder)
 				.build();
 
 		return elasticsearchRestTemplate.search(searchQuery, IndexUnit.class, IndexCoordinates.of("agencija_za_zaposljavanje_dokumenti"));
@@ -68,38 +62,23 @@ public class ResultRetriever {
 		for (int i = 0; i < searchHits.getTotalHits(); i++) {
 			IndexUnit cvIndexUnit = searchHits.getSearchHit(i).getContent();
 			Map<String, List<String>> highlightFields = searchHits.getSearchHit(i).getHighlightFields();
+
+			StringBuilder highlights = new StringBuilder("...");
 			if (searchHits.getSearchHit(i).getHighlightFields() != null) {
-				StringBuilder highlights = new StringBuilder("...");
+				highlightFields.forEach((key, value) -> highlights.append(value));
 			}
-			// searchHits.getSearchHit(i).getHighlightFields().get("cvContent").get(0)
-			retResultsList.add(mapCVIndexToResultData(cvIndexUnit, highlightFields));
+				retResultsList.add(mapCVIndexToResultData(cvIndexUnit, highlights.toString()));
 
 			}
 		return retResultsList;
 	}
 	
-	private SearchResponseDTO mapCVIndexToResultData(IndexUnit cvIndexUnit, Map<String, List<String>> highlightFields) {
-		SearchResponseDTO resultData = mapCVToDTO(cvIndexUnit, new ArrayList<>());
-		highlightFields.forEach((key, value) -> setResultDataForHighlight(resultData, key, value));
+	private SearchResponseDTO mapCVIndexToResultData(IndexUnit cvIndexUnit, String h) {
+		SearchResponseDTO resultData = mapCVToDTO(cvIndexUnit, h);
 		return resultData;
 	}
-	
-	private void setResultDataForHighlight(SearchResponseDTO resultData, String key, List<String> value) {
-		switch (key) {
-			case "firstName":
-				resultData.setFirstName(formatHighlight(value));
-				break;
-			case "lastName":
-				resultData.setLastName(formatHighlight(value));
-				break;
-			case "text":
-				resultData.setHighlight(formatHighlight(value));
-				break;
-		}
-	}
 
-	
-	public SearchResponseDTO mapCVToDTO(IndexUnit cvIndexUnit, List<String> highlight) {
+	public SearchResponseDTO mapCVToDTO(IndexUnit cvIndexUnit, String h) {
 		SearchResponseDTO resultData = new SearchResponseDTO();
 		resultData.setHighlight("");
 		resultData.setFirstName(cvIndexUnit.getFirstName());
@@ -110,14 +89,24 @@ public class ResultRetriever {
 		resultData.setCvContent(cvIndexUnit.getCvContent());
 		resultData.setClPath(cvIndexUnit.getClPath());
 		resultData.setClContent(cvIndexUnit.getCoverLetterContent());
-		resultData.setHighlight(formatHighlight(highlight));
+		resultData.setHighlight(h);
 		return resultData;
 	}
-	
-	public String formatHighlight(List<String> highlight) {
-		StringBuilder stringBuilder = new StringBuilder();
-		highlight.forEach(highlightItem -> stringBuilder.append(highlightItem).append("<br/>"));
-		return stringBuilder.toString();
+
+	public HighlightBuilder getHighlightBuilder(String field){
+
+		HighlightBuilder highlightBuilder = new HighlightBuilder();
+		if(field.equals("firstNameAndLastName")){
+			highlightBuilder.field("firstName");
+			highlightBuilder.field("lastName");
+		}else{
+			highlightBuilder.field(field);
+		}
+		highlightBuilder.preTags("<b>");
+		highlightBuilder.postTags("</b>");
+		highlightBuilder.numOfFragments(3);
+		highlightBuilder.fragmentSize(150);
+		return highlightBuilder;
 	}
 
 }

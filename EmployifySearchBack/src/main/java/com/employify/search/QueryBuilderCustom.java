@@ -1,5 +1,6 @@
 package com.employify.search;
 
+import com.employify.dto.BoolQueryDTO;
 import com.employify.model.IndexUnit;
 import com.employify.model.SearchType;
 import org.elasticsearch.index.query.BoolQueryBuilder;
@@ -19,22 +20,18 @@ public class QueryBuilderCustom {
 	public static QueryBuilder buildQuery(SearchType queryType, String field, String value) throws IllegalArgumentException {
 		validateQueryFields(field, value);
 		if(field.equals("firstNameAndLastName")){
-			BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
-			String name = value.split("!")[0];;
-			String lastName = "";
-			try{lastName = value.split("!")[1];
-			}catch(Exception e){lastName = null;}
-			if(!name.equals("")){boolQuery.must(QueryBuilders.termQuery("firstName", name.toLowerCase()));}
-			if(lastName != null){boolQuery.must(QueryBuilders.termQuery("lastName", lastName.toLowerCase()));}
-			return boolQuery;
-		}else
-		if(queryType.equals(SearchType.REGULAR)){
-			return QueryBuilders.matchQuery(field, value).analyzer(IndexUnit.SERBIAN_ANALYZER);
+			return createNameLastNameQuery(value);
+		}else if(queryType.equals(SearchType.REGULAR)){
+			return QueryBuilders.fuzzyQuery(field, value);
 		} else if(queryType.equals(SearchType.PHRASE)) {
-			return QueryBuilders.matchPhraseQuery(field, value).analyzer(IndexUnit.SERBIAN_ANALYZER);
-		}else{
-			return QueryBuilders.matchPhraseQuery(field, value).analyzer(IndexUnit.SERBIAN_ANALYZER);
+			return QueryBuilders.matchPhraseQuery(field, value);
 		}
+		return null;
+	}
+
+	public static QueryBuilder buildBoolQuery(BoolQueryDTO queryDto){
+
+		return null;
 	}
 
 	private static void validateQueryFields(String field, String value) {
@@ -49,6 +46,17 @@ public class QueryBuilderCustom {
 		if(!errorMessage.equals("")){
 			throw new IllegalArgumentException(errorMessage);
 		}
+	}
+
+	private static QueryBuilder createNameLastNameQuery(String value){
+		BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
+		String name = value.split("!")[0];;
+		String lastName = "";
+		try{lastName = value.split("!")[1];
+		}catch(Exception e){lastName = null;}
+		if(!name.equals("")){boolQuery.should(QueryBuilders.fuzzyQuery("firstName", name));}
+		if(lastName != null){boolQuery.should(QueryBuilders.fuzzyQuery("lastName", lastName));}
+		return boolQuery;
 	}
 
 }
