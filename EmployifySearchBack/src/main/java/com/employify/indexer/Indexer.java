@@ -1,5 +1,6 @@
 package com.employify.indexer;
 
+import com.employify.dto.FileUploadDTO;
 import com.employify.model.IndexUnit;
 import com.employify.repository.DocumentRepository;
 import org.apache.pdfbox.cos.COSDocument;
@@ -9,6 +10,7 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.elasticsearch.core.geo.GeoPoint;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -56,6 +58,25 @@ public class Indexer {
         return parsedText;
     }
 
+    public void indexUploadedFile(FileUploadDTO fileUploadDTO) throws IOException{
+
+        String fileNameCv = saveUploadedFile(fileUploadDTO.getCv());
+        String fileNameCl = saveUploadedFile(fileUploadDTO.getCoverLetter());
+        if(fileNameCl != null && fileNameCv != null){
+            IndexUnit indexUnit = new IndexUnit();
+            indexUnit.setFirstName(fileUploadDTO.getFirstName());
+            indexUnit.setLastName(fileUploadDTO.getLastName());
+            indexUnit.setLocation(new GeoPoint(fileUploadDTO.getLatitude(), fileUploadDTO.getLongitude()));
+            indexUnit.setEducation(fileUploadDTO.getEducation());
+            indexUnit.setCvPath(fileUploadDTO.getCv().getOriginalFilename());
+            indexUnit.setCvContent(parseFile(fileUploadDTO.getCv()));
+            indexUnit.setClPath(fileUploadDTO.getCoverLetter().getOriginalFilename());
+            indexUnit.setCoverLetterContent(parseFile(fileUploadDTO.getCoverLetter()));
+            add(indexUnit);
+        }
+
+    }
+
     public String saveUploadedFile(MultipartFile file) throws IOException {
         String retVal = null;
         if (!file.isEmpty()) {
@@ -70,4 +91,5 @@ public class Indexer {
         }
         return retVal;
     }
+
 }

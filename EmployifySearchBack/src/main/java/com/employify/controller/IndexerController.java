@@ -27,11 +27,9 @@ public class IndexerController {
     @PostMapping(value = {"/add"})
     public ResponseEntity<?> addFile(@RequestPart("user") FileUploadDTO fileUploadDTO, @RequestPart("cv") MultipartFile cv, @RequestPart("coverLetter") MultipartFile coverLetter){
         try {
-
             fileUploadDTO.setCv(cv);
             fileUploadDTO.setCoverLetter(coverLetter);
-            indexUploadedFile(fileUploadDTO);
-
+            indexer.indexUploadedFile(fileUploadDTO);
         } catch (IOException e) {
             return ResponseEntity.badRequest().build();
         }
@@ -39,24 +37,7 @@ public class IndexerController {
         return ResponseEntity.ok().build();
     }
 
-    private void indexUploadedFile(FileUploadDTO fileUploadDTO) throws IOException{
 
-        String fileNameCv = indexer.saveUploadedFile(fileUploadDTO.getCv());
-        String fileNameCl = indexer.saveUploadedFile(fileUploadDTO.getCoverLetter());
-        if(fileNameCl != null && fileNameCv != null){
-            IndexUnit indexUnit = new IndexUnit();
-            indexUnit.setFirstName(fileUploadDTO.getFirstName());
-            indexUnit.setLastName(fileUploadDTO.getLastName());
-            indexUnit.setGeoPoint(new GeoPoint(fileUploadDTO.getLatitude(), fileUploadDTO.getLongitude()));
-            indexUnit.setEducation(fileUploadDTO.getEducation());
-            indexUnit.setCvPath(fileUploadDTO.getCv().getOriginalFilename());
-            indexUnit.setCvContent(indexer.parseFile(fileUploadDTO.getCv()));
-            indexUnit.setClPath(fileUploadDTO.getCoverLetter().getOriginalFilename());
-            indexUnit.setCoverLetterContent(indexer.parseFile(fileUploadDTO.getCoverLetter()));
-            indexer.add(indexUnit);
-        }
-
-    }
 
 
 

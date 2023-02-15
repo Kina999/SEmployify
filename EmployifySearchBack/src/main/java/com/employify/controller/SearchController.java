@@ -2,6 +2,7 @@ package com.employify.controller;
 
 
 import com.employify.dto.BoolQueryDTO;
+import com.employify.dto.GeoQueryDTO;
 import com.employify.dto.StandardQueryDTO;
 import com.employify.model.SearchType;
 import com.employify.search.QueryBuilderCustom;
@@ -26,15 +27,34 @@ public class SearchController {
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping(value = "/standard")
     public ResponseEntity<?> searchStandardQuery(@RequestBody StandardQueryDTO queryDto) throws Exception {
-        QueryBuilder query = QueryBuilderCustom.buildQuery(queryDto.isPhrase() ? SearchType.PHRASE : SearchType.REGULAR, queryDto.getField(), queryDto.getValue());
-        return new ResponseEntity<>(resultRetriever.getResults(query, resultRetriever.getHighlightBuilder(queryDto.getField())), HttpStatus.OK);
+        try {
+            QueryBuilder query = QueryBuilderCustom.buildQuery(queryDto.isPhrase() ? SearchType.PHRASE : SearchType.REGULAR, queryDto.getField(), queryDto.getValue());
+            return new ResponseEntity<>(resultRetriever.getResults(query, resultRetriever.getHighlightBuilder(queryDto.getField())), HttpStatus.OK);
+        }catch(Exception e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping(value = "/bool")
     public ResponseEntity<?> searchBoolQuery(@RequestBody BoolQueryDTO queryDto) throws Exception {
-        QueryBuilder query = QueryBuilderCustom.buildBoolQuery(queryDto);
-        return new ResponseEntity<>(resultRetriever.getResults(query,
-                resultRetriever.getBoolHighlightBuilder(queryDto.getFirstField(), queryDto.getSecondField())), HttpStatus.OK);
+        try {
+            QueryBuilder query = QueryBuilderCustom.buildBoolQuery(queryDto);
+            return new ResponseEntity<>(resultRetriever.getResults(query,
+                    resultRetriever.getBoolHighlightBuilder(queryDto.getFirstField(), queryDto.getSecondField())), HttpStatus.OK);
+        }catch(Exception e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
+    @PostMapping(value = "/geo")
+    public ResponseEntity<?> searchGeoQuery(@RequestBody GeoQueryDTO queryDto) throws Exception {
+        try {
+            QueryBuilder query = QueryBuilderCustom.buildGeoQuery(queryDto);
+            return new ResponseEntity<>(resultRetriever.getResults(query,null), HttpStatus.OK);
+        }catch(Exception e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 }

@@ -1,9 +1,12 @@
 package com.employify.search;
 
 import com.employify.dto.BoolQueryDTO;
+import com.employify.dto.GeoQueryDTO;
 import com.employify.model.IndexUnit;
 import com.employify.model.SearchType;
+import org.elasticsearch.common.unit.DistanceUnit;
 import org.elasticsearch.index.query.BoolQueryBuilder;
+import org.elasticsearch.index.query.GeoDistanceQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 
@@ -81,4 +84,11 @@ public class QueryBuilderCustom {
 		return boolQuery;
 	}
 
+	public static QueryBuilder buildGeoQuery(GeoQueryDTO queryDto) {
+
+		return QueryBuilders.geoDistanceQuery("location")
+				.point(queryDto.getLatitude(), queryDto.getLongitude())
+				.distance(queryDto.getRadius(), DistanceUnit.KILOMETERS);
+
+	}
 }

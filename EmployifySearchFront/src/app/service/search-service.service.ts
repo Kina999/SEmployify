@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { SearchDTO } from '../dto/SearchDTO';
 import { SearchBoolDTO } from '../dto/SearchBoolDTO';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { SearchGeoDTO } from '../dto/SearchGeoDTO';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,8 @@ export class SearchServiceService {
   private searchServiceUrl = "/api/v1/search"
   private standardSearchUrl = "/standard"
   private boolSearchUrl = "/bool"
-
+  private geoSearchUrl = "/geo"
+  
   constructor(private http: HttpClient) { }
 
   searchStandard(searchDTO: SearchDTO) {
@@ -23,4 +25,7 @@ export class SearchServiceService {
     return this.http.post(`${this.baseUrl}${this.searchServiceUrl}${this.boolSearchUrl}`, searchBoolDTO)
   }
 
+  searchGeo(searchGeoDTO: SearchGeoDTO) {
+    return this.http.post(`${this.baseUrl}${this.searchServiceUrl}${this.geoSearchUrl}`, searchGeoDTO)
+  }
 }

@@ -1,14 +1,31 @@
 <div style="padding-top: 10%; margin-left: 15%;">
-    <div class="input-group mb-3" style="width: 80%; margin-left: 15%;">
+    <div class="input-group mb-3" style="width: 80%; margin-left: 17%;">
         <div class="mb-3" style="width: 30%;">
             <geoapify-geocoder-autocomplete class="round-borders" (placeSelect)="placeSelected($event)">
             </geoapify-geocoder-autocomplete>
         </div>
         <div class="mb-3" style="width: 20%; margin-right: 3%;">
-            <input type="number" placeholder="Radius (km)" class="form-control" id="exampleInputPassword1" name="radius">
+            <input type="number" placeholder="Radius (km)" class="form-control" id="exampleInputPassword1" name="radius" [(ngModel)]="radius">
         </div>
         <div class="input-group-append">
-            <button class="btn btn-primary" type="submit">Pretrazi</button>
+            <button class="btn btn-primary" type="submit" (click)="search()">Pretrazi</button>
         </div>
+    </div>
+
+    <div class="list-group" style="width: 70%; margin-left: 8%;">
+        <a href="#" class="list-group-item list-group-item-action" *ngFor="let result of searchResult; let i = index"
+            style="margin-top: 3%;">
+            <div>
+                <h5 class="mb-1" [innerHTML]="result.firstName" style="display: inline;"></h5>
+                &nbsp;
+                <h5 class="mb-1" [innerHTML]="result.lastName" style="display: inline;"></h5>
+            </div>
+            <p class="mb-1" [innerHTML]="result.education"></p>
+            <p class="mb-1" [innerHTML]="result.highlight"></p>
+            <button class="btn btn-primary" type="submit" style="margin-right: 1%;" (click)="downloadCv(i)"><img
+                    src="./../../../assets/img/download.svg" /> CV</button>
+            <button class="btn btn-primary" type="submit"><img src="./../../../assets/img/download.svg"
+                    (click)="downloadCl(i)" /> CL</button>
+        </a>
     </div>
 </div>

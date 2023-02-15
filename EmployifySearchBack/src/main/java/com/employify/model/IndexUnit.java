@@ -2,10 +2,7 @@ package com.employify.model;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.elasticsearch.annotations.Document;
-import org.springframework.data.elasticsearch.annotations.Field;
-import org.springframework.data.elasticsearch.annotations.FieldType;
-import org.springframework.data.elasticsearch.annotations.Setting;
+import org.springframework.data.elasticsearch.annotations.*;
 import org.springframework.data.elasticsearch.core.geo.GeoPoint;
 
 @Builder
@@ -29,8 +26,8 @@ public class IndexUnit {
 //    public double longitude;
 //    @Field(type = FieldType.Double, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
 //    public double latitude;
-    @Field(type = FieldType.Double, store = true)
-    public GeoPoint geoPoint;
+    @GeoPointField
+    public GeoPoint location;
     @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
     public String education;
     @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)

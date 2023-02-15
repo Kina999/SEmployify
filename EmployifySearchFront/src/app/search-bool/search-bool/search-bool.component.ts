@@ -54,7 +54,7 @@ export class SearchBoolComponent implements OnInit {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
     link.setAttribute('href', '.../../assets/files/'+this.searchResult[i].cvPath);
-    link.setAttribute('download', `cv.pdf`);
+    link.setAttribute('download', this.searchResult[i].cvPath);
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -64,7 +64,7 @@ export class SearchBoolComponent implements OnInit {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
     link.setAttribute('href', '.../../assets/files/'+this.searchResult[i].clPath);
-    link.setAttribute('download', `cl.pdf`);
+    link.setAttribute('download', this.searchResult[i].clPath);
     document.body.appendChild(link);
     link.click();
     link.remove();
