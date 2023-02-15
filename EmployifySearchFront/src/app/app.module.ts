@@ -11,6 +11,7 @@ import { SearchBoolComponent } from './search-bool/search-bool/search-bool.compo
 import { SearchGeoComponent } from './search-geo/search-geo/search-geo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GeoapifyGeocoderAutocompleteModule } from '@geoapify/angular-geocoder-autocomplete';
+import { StatisticsComponent } from './statistics/statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GeoapifyGeocoderAutocompleteModule } from '@geoapify/angular-geocoder-a
     NavbarComponent,
     SearchComponent,
     SearchBoolComponent,
-    SearchGeoComponent
+    SearchGeoComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,

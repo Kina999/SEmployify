@@ -70,17 +70,17 @@ public class QueryBuilderCustom {
 		String lastName = "";
 		try{lastName = value.split("!")[1];
 		}catch(Exception e){lastName = null;}
-		QueryBuilder nameQB;
-		QueryBuilder lastNameQB;
+		QueryBuilder nameQB = null;
+		QueryBuilder lastNameQB = null;
 		if(queryType.equals(SearchType.REGULAR)){
-			nameQB = QueryBuilders.fuzzyQuery("firstName", name);
-			lastNameQB = QueryBuilders.fuzzyQuery("firstName", name);
+			if(!name.equals("")){nameQB = QueryBuilders.fuzzyQuery("firstName", name);}
+			if(lastName != null){lastNameQB = QueryBuilders.fuzzyQuery("lastName", lastName);}
 		} else {
-			nameQB = QueryBuilders.matchPhraseQuery("firstName", name);
-			lastNameQB = QueryBuilders.matchPhraseQuery("firstName", name);
+			if(!name.equals("")){nameQB = QueryBuilders.matchPhraseQuery("firstName", name);}
+			if(lastName != null){lastNameQB = QueryBuilders.matchPhraseQuery("lastName", lastName);}
 		}
-		if(!name.equals("")){boolQuery.must(nameQB);}
-		if(lastName != null){boolQuery.must(lastNameQB);}
+		if(nameQB != null){boolQuery.should(nameQB);}
+		if(lastNameQB != null){boolQuery.should(lastNameQB);}
 		return boolQuery;
 	}
 

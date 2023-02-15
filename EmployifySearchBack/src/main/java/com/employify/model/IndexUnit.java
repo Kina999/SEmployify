@@ -22,10 +22,6 @@ public class IndexUnit {
     public String firstName;
     @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
     public String lastName;
-//    @Field(type = FieldType.Double, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
-//    public double longitude;
-//    @Field(type = FieldType.Double, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
-//    public double latitude;
     @GeoPointField
     public GeoPoint location;
     @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)

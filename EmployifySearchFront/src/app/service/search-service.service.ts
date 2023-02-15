@@ -14,6 +14,7 @@ export class SearchServiceService {
   private standardSearchUrl = "/standard"
   private boolSearchUrl = "/bool"
   private geoSearchUrl = "/geo"
+  private requestStatisticSearchUrl = "/statistic"
   
   constructor(private http: HttpClient) { }
 
@@ -27,5 +28,9 @@ export class SearchServiceService {
 
   searchGeo(searchGeoDTO: SearchGeoDTO) {
     return this.http.post(`${this.baseUrl}${this.searchServiceUrl}${this.geoSearchUrl}`, searchGeoDTO)
+  }
+
+  searchRequestsStatistics(searchStatisticDTO: SearchDTO) {
+    return this.http.post(`${this.baseUrl}${this.searchServiceUrl}${this.requestStatisticSearchUrl}`, searchStatisticDTO)
   }
 }
