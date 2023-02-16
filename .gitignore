@@ -25,7 +25,7 @@ npm-debug.log
 testem.log
 typings/
 .angular/
-
+files/
 # e2e
 e2e/*.js
 e2e/*.map
@@ -37,7 +37,6 @@ e2e/*.map
 # Compiled class file
 *.class
 
-*.docx
 # Log file
 *.log
 
