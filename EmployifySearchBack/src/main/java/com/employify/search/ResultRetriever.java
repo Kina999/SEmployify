@@ -7,9 +7,8 @@ import java.util.Map;
 import com.employify.dto.SearchResponseDTO;
 import com.employify.model.IndexUnit;
 import com.employify.repository.DocumentRepository;
-import org.elasticsearch.index.query.BoolQueryBuilder;
+import com.employify.repository.StatisticRepository;
 import org.elasticsearch.index.query.QueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
@@ -25,11 +24,13 @@ public class ResultRetriever {
 	private final ElasticsearchRestTemplate elasticsearchRestTemplate;
 
 	private final DocumentRepository documentRepository;
+	private final StatisticRepository statisticRepository;
 
 	@Autowired
-	public ResultRetriever(ElasticsearchRestTemplate elasticsearchRestTemplate, DocumentRepository documentRepository){
+	public ResultRetriever(ElasticsearchRestTemplate elasticsearchRestTemplate, DocumentRepository documentRepository, StatisticRepository statisticRepository){
 		this.elasticsearchRestTemplate = elasticsearchRestTemplate;
 		this.documentRepository = documentRepository;
+		this.statisticRepository = statisticRepository;
 	}
 
 	public List<SearchResponseDTO> getResults(QueryBuilder query, HighlightBuilder highlightBuilder) throws Exception {
@@ -42,7 +43,6 @@ public class ResultRetriever {
 
 //		BoolQueryBuilder mainBoolQuery = QueryBuilders.boolQuery();
 //		mainBoolQuery.should(query);
-
 		NativeSearchQuery searchQuery = new NativeSearchQueryBuilder()
 				.withQuery(query)
 				.withHighlightBuilder(highlightBuilder)
