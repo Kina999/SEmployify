@@ -26,6 +26,7 @@ testem.log
 typings/
 .angular/
 files/
+logs/
 # e2e
 e2e/*.js
 e2e/*.map

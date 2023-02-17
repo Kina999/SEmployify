@@ -65,7 +65,7 @@ public class SearchController {
     @PostMapping(value = "/statistic")
     public ResponseEntity<?> searchRequestStatisticQuery(@RequestBody StandardQueryDTO queryDto) {
         try {
-            QueryBuilder query = QueryBuilderCustom.buildQuery(SearchType.REGULAR, queryDto.getField(), queryDto.getValue());
+            QueryBuilder query = QueryBuilderCustom.buildStatisticQuery(queryDto.getField(), queryDto.getValue());
             return new ResponseEntity<>(statisticsResultRetriever.getResults(query, queryDto.getValue() + "="), HttpStatus.OK);
         }catch(Exception e){
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);

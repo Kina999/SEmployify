@@ -18,20 +18,20 @@ public class IndexUnit {
 
     @Id
     public String id;
-    @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
+    @Field(type = FieldType.Text, store = true)
     public String firstName;
-    @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
+    @Field(type = FieldType.Text, store = true)
     public String lastName;
     @GeoPointField
     public GeoPoint location;
-    @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
+    @Field(type = FieldType.Text, store = true)
     public String education;
-    @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
+    @Field(type = FieldType.Text, store = true)
     public String cvContent;
-    @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
+    @Field(type = FieldType.Text, store = true)
     public String cvPath;
-    @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
+    @Field(type = FieldType.Text, store = true)
     public String coverLetterContent;
-    @Field(type = FieldType.Text, store = true, searchAnalyzer = SERBIAN_ANALYZER, analyzer = SERBIAN_ANALYZER)
+    @Field(type = FieldType.Text, store = true)
     public String clPath;
 }

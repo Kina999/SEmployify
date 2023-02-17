@@ -566,3 +566,117 @@ java.lang.NullPointerException: Cannot invoke "org.apache.catalina.Wrapper.getMu
 2023-02-16 10:11:37,162 INFO c.e.c.IndexerController [http-nio-9099-exec-4] COMPANY=Bonita
 2023-02-16 10:11:43,591 INFO c.e.c.IndexerController [http-nio-9099-exec-5] EMPLOYEE=Maja Zerajic
 2023-02-16 10:11:43,591 INFO c.e.c.IndexerController [http-nio-9099-exec-5] COMPANY=Bonita
+2023-02-17 14:07:50,505 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 10588 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-17 14:07:50,543 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-17 14:07:56,597 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:07:57,619 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 976 ms. Found 2 Elasticsearch repository interfaces.
+2023-02-17 14:07:58,694 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:07:58,725 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 39 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-17 14:08:00,343 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-17 14:08:00,406 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:08:00,455 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-17 14:08:00,458 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-17 14:08:00,948 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-17 14:08:00,948 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 9902 ms
+2023-02-17 14:08:06,223 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:08:06,254 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-17 14:08:06,270 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 17.741 seconds (JVM running for 21.735)
+2023-02-17 14:08:51,188 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-17 14:08:51,188 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-17 14:08:51,188 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 0 ms
+2023-02-17 14:08:52,181 INFO c.e.c.IndexerController [http-nio-9099-exec-2] CITY=Nevesinje
+2023-02-17 14:13:15,332 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 11940 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-17 14:13:15,351 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-17 14:13:17,526 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:13:17,774 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 197 ms. Found 2 Elasticsearch repository interfaces.
+2023-02-17 14:13:18,693 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:13:18,748 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 54 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-17 14:13:20,997 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-17 14:13:21,044 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:13:21,044 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-17 14:13:21,060 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-17 14:13:21,593 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-17 14:13:21,593 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6104 ms
+2023-02-17 14:13:25,712 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:13:25,743 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-17 14:13:25,759 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 12.543 seconds (JVM running for 14.928)
+2023-02-17 14:13:35,980 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-17 14:13:35,980 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-17 14:13:35,996 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 0 ms
+2023-02-17 14:14:48,856 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 10404 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-17 14:14:48,894 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-17 14:14:49,996 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:14:50,120 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 109 ms. Found 2 Elasticsearch repository interfaces.
+2023-02-17 14:14:50,510 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:14:50,551 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 39 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-17 14:14:51,691 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-17 14:14:51,739 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:14:51,741 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-17 14:14:51,742 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-17 14:14:52,023 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-17 14:14:52,023 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3021 ms
+2023-02-17 14:14:54,846 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:14:54,901 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-17 14:14:54,927 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 7.305 seconds (JVM running for 10.199)
+2023-02-17 14:21:23,802 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-17 14:21:23,802 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-17 14:21:23,802 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-1] Completed initialization in 0 ms
+2023-02-17 14:21:24,771 INFO c.e.c.IndexerController [http-nio-9099-exec-1] CITY=Nevesinje
+2023-02-17 14:21:55,246 INFO c.e.c.IndexerController [http-nio-9099-exec-2] CITY=Nevesinje
+2023-02-17 14:23:22,670 INFO c.e.c.IndexerController [http-nio-9099-exec-6] EMPLOYEE=Maja Zerajic
+2023-02-17 14:23:22,670 INFO c.e.c.IndexerController [http-nio-9099-exec-6] COMPANY=SEmployify
+2023-02-17 14:24:23,246 INFO c.e.c.IndexerController [http-nio-9099-exec-7] EMPLOYEE=Marko Markovic
+2023-02-17 14:24:23,247 INFO c.e.c.IndexerController [http-nio-9099-exec-7] COMPANY=SEmployify
+2023-02-17 14:27:10,731 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 15192 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-17 14:27:10,762 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-17 14:27:11,971 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:27:12,125 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 139 ms. Found 2 Elasticsearch repository interfaces.
+2023-02-17 14:27:12,560 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:27:12,586 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 25 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-17 14:27:13,936 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-17 14:27:13,986 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:27:13,988 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-17 14:27:13,989 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-17 14:27:14,326 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-17 14:27:14,327 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3443 ms
+2023-02-17 14:27:17,423 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:27:17,451 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-17 14:27:17,469 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 8.155 seconds (JVM running for 11.933)
+2023-02-17 14:27:25,277 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-17 14:27:25,294 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-17 14:27:25,297 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 1 ms
+2023-02-17 14:28:49,465 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 2032 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-17 14:28:49,492 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-17 14:28:50,707 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:28:50,851 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 128 ms. Found 2 Elasticsearch repository interfaces.
+2023-02-17 14:28:51,301 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:28:51,329 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 27 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-17 14:28:52,768 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-17 14:28:52,817 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:28:52,817 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-17 14:28:52,817 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-17 14:28:53,138 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-17 14:28:53,138 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3510 ms
+2023-02-17 14:28:56,124 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:28:56,155 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-17 14:28:56,171 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 8.158 seconds (JVM running for 11.593)
+2023-02-17 14:30:54,065 INFO o.s.b.StartupInfoLogger [main] Starting EmployifySearchApplication using Java 17.0.4.1 on KATARINA with PID 12684 (C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack\target\classes started by PC in C:\Users\PC\Desktop\AgencijaZaZaposljavanje\EmployifySearch\EmployifySearchBack)
+2023-02-17 14:30:54,114 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-02-17 14:30:55,164 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:30:55,290 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 111 ms. Found 2 Elasticsearch repository interfaces.
+2023-02-17 14:30:55,707 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-02-17 14:30:55,734 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 26 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-02-17 14:30:56,845 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9099 (http)
+2023-02-17 14:30:56,887 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:30:56,888 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-17 14:30:56,890 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-02-17 14:30:57,148 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-17 14:30:57,149 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2928 ms
+2023-02-17 14:30:59,680 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9099"]
+2023-02-17 14:30:59,704 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9099 (http) with context path ''
+2023-02-17 14:30:59,721 INFO o.s.b.StartupInfoLogger [main] Started EmployifySearchApplication in 6.885 seconds (JVM running for 9.19)
+2023-02-17 14:31:07,330 INFO o.a.j.l.DirectJDKLog [http-nio-9099-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-17 14:31:07,331 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-17 14:31:07,333 INFO o.s.w.s.FrameworkServlet [http-nio-9099-exec-2] Completed initialization in 2 ms
+2023-02-17 14:31:49,458 INFO c.e.c.IndexerController [http-nio-9099-exec-7] EMPLOYEE=Maja Zerajic
+2023-02-17 14:31:49,458 INFO c.e.c.IndexerController [http-nio-9099-exec-7] COMPANY=SEmployify
